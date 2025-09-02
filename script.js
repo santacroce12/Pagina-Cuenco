@@ -117,7 +117,7 @@ $(document).ready(function() {
     $(document).ready(function() {
     // URLs de los partners (ajusta según tus necesidades)
     const partnerUrls = {
-        'Cesp color.png': 'https://www.cesp.com.ar',
+        'Cespcolor.png': 'https://www.cesp.com.ar',
         'ccontrol.png': 'https://www.ccontrol.com',
         'dexcolor.webp': 'https://www.dexmanager.com/',
         'hanwa.png': 'https://www.hanwha-security.com',
@@ -130,7 +130,7 @@ $(document).ready(function() {
     $(document).ready(function() {
     // URLs de los partners (basado en los nombres de archivo actualizados)
     const partnerUrls = {
-        'Cesp color.png': 'https://www.cespi.unlp.edu.ar/',
+        'Cespcolor.png': 'https://www.cespi.unlp.edu.ar/',
         'ccontrol.png': 'https://www.c-control.com/es/',
         'dexcolor.webp': 'https://www.dexmanager.com/',
         'hanwavisioncolor.jpg': 'https://hanwhavisionlatam.com/',
