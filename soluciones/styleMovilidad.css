@@ -71,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section mejorada */
 .solution-hero {
-    background: linear-gradient(rgba(26, 26, 64, 0.85), rgba(26, 26, 64, 0.9)), url('https://images.unsplash.com/photo-1593941707882-a5bba53377fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 26, 64, 0.85), rgba(26, 26, 64, 0.9)), 
+            url('../Imagenes/Movility\ y\ seguridad.jpg') no-repeat center center/cover !important;
     padding: 150px 0 100px;
     color: white;
     text-align: center;
