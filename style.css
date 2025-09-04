@@ -947,6 +947,17 @@ footer {
         margin-left: 0 !important;
     }
 }
+/* Quitar espacio extra al final del contacto */
+.contact {
+    padding-bottom: 0px; /* en lugar de 100px */
+}
+
+.contact .row:last-child,
+.contact .col-lg-6:last-child,
+.contact-card:last-child {
+    margin-bottom: 0 !important;
+}
+
 /* Contact Form Styles */
 .contact-form-card {
     background: white;
