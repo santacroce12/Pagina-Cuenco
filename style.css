@@ -1059,3 +1059,70 @@ footer {
     background-size: cover;
     pointer-events: none; /* 🔹 Esto evita que bloquee el formulario */
 }
+
+    /* Estilos para el modal de formulario */
+    #contactFormModal .modal-content {
+        background: rgba(16, 16, 53, 0.95);
+        border-radius: 15px;
+        border: none;
+        color: white;
+    }
+    
+    #contactFormModal .modal-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 30px 10px;
+    }
+    
+    #contactFormModal .modal-title {
+        font-weight: 700;
+        color: white;
+    }
+    
+    #contactFormModal .btn-close {
+        filter: invert(1);
+        opacity: 0.8;
+    }
+    
+    #contactFormModal .modal-body {
+        padding: 10px 30px 30px;
+    }
+    
+    #contactFormModal .form-label {
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 8px;
+    }
+    
+    #contactFormModal .form-control {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        color: white;
+        padding: 12px 15px;
+    }
+    
+    #contactFormModal .form-control:focus {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: #2c6fd6;
+        box-shadow: 0 0 0 3px rgba(44, 111, 214, 0.25);
+        color: white;
+    }
+    
+    #contactFormModal .form-control::placeholder {
+        color: #bbb;
+    }
+    
+    #contactFormModal .btn-primary {
+        background: linear-gradient(135deg, #2c6fd6, #1a4fac);
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        padding: 14px;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    
+    #contactFormModal .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
