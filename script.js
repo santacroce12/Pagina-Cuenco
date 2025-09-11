@@ -85,6 +85,8 @@ $(document).ready(function () {
         "net2.png": "https://www.net2phone.com/es-ar/",
         "Orbith.png": "https://www.orbith.com/ar/",
         "Rlinkcolor.png": "http://www.rlink.com.ar/",
+        "hikvision.png" : "https://www.hikvision.com/es-la/",
+        "Urbanly.png" : "https://urbanly.org/"
     };
 
     $(".partner-item").each(function () {
