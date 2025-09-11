@@ -1,336 +1,475 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciberseguridad - Soluciones Tecnológicas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleSeguridad.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleSeguridad.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-               <img src="../Imagenes/logo.png" alt="CuencoTech" width="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#about">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#solutions">Soluciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#markets">Mercados</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#partners">Alianzas</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../Imagenes/logo.png" alt="CuencoTech" width="100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#solutions">Soluciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#markets">Mercados</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#partners">Alianzas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Hero Section -->
     <section class="solution-hero cybersecurity-hero">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="hero-title">Soluciones de Ciberseguridad</h1>
-                    <p class="hero-subtitle">Protegiendo sus sistemas críticos con las mejores prácticas y tecnologías de seguridad</p>
-                        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contactar Ahora</a>
-                        <a href="../index.html#solutions" class="btn btn-outline-light btn-lg ms-3">Nuestras Soluciones</a>                
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="hero-title">Soluciones de Ciberseguridad</h1>
+            <p class="hero-subtitle">
+              Protegiendo sus sistemas críticos con las mejores prácticas y
+              tecnologías de seguridad
+            </p>
+            <a href="../index.html#contact" class="btn btn-primary btn-lg"
+              >Contactar Ahora</a
+            >
+            <a
+              href="../index.html#solutions"
+              class="btn btn-outline-light btn-lg ms-3"
+              >Nuestras Soluciones</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Introducción -->
     <section class="solution-intro">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h2>CIBERSEGURIDAD</h2>
-                    <p class="lead">El equipo de Ciberseguridad de CUENCOTECH con su departamento de ingeniería sigue rigurosos procedimientos y aplicación de normas internacionales para el diseño, desarrollo, prueba y puesta en servicio de redes de datos OT en sistemas de energía eléctrica y otros de alta criticidad.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2>CIBERSEGURIDAD</h2>
+            <p class="lead">
+              El equipo de Ciberseguridad de CUENCOTECH con su departamento de
+              ingeniería sigue rigurosos procedimientos y aplicación de normas
+              internacionales para el diseño, desarrollo, prueba y puesta en
+              servicio de redes de datos OT en sistemas de energía eléctrica y
+              otros de alta criticidad.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Descripción -->
     <section class="solution-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="solution-content">
-                        <p>Identificamos, monitoreamos y mejoramos continuamente con la aplicación de las mejores prácticas y recomendaciones de entidades internacionales en la materia, para garantizar la seguridad de sus redes OT y los puntos de convergencia OT/IT.</p>
-                        
-                        <ul class="solution-features">
-                            <li><i class="fas fa-check-circle"></i> Implementación de buenas prácticas de ciberseguridad para redes de datos para Sistemas de control resilientes.</li>
-                            <li><i class="fas fa-check-circle"></i> Mejora de fiabilidad y protección automatizada de redes OT con prácticas basadas en NERC PRC-005. Inspección, pruebas, informes y auditoría.</li>
-                            <li><i class="fas fa-check-circle"></i> Defensa en profundidad (Deep inspection package) en protocolos de comunicación específicos para la industria eléctrica y los sistemas de control.</li>
-                            <li><i class="fas fa-check-circle"></i> Implementación de estrategias de detección de intrusiones en redes de datos OT.</li>
-                            <li><i class="fas fa-check-circle"></i> Detección rápida de fallas e intrusiones, aislamiento y recuperación en redes Ethernet para telecontrol y aplicaciones de transmisión de datos en automatismos de alta velocidad.</li>
-                            <li><i class="fas fa-check-circle"></i> Pruebas de campo para verificación de respuesta (performance) de redes inalámbricas, cableadas o de FO.</li>
-                            <li><i class="fas fa-check-circle"></i> Ciberseguridad de datos en SCADAs para sistemas de energía eléctrica, smart grids e industria en general.</li>
-                            <li><i class="fas fa-check-circle"></i> Análisis e implementación de estrategias de mitigación de riesgos.</li>
-                            <li><i class="fas fa-check-circle"></i> Implementación de seguridad en redes de datos en sistemas distribuidos o de área amplia.</li>
-                            <li><i class="fas fa-check-circle"></i> Soluciones de seguridad de datos en SubEstaciones digitales basadas en estándares abiertos. IEC61850.</li>
-                            <li><i class="fas fa-check-circle"></i> Mejora de protección, administración y confiabilidad de redes de comunicación Ethernet en sistemas de operación con hardware basado en tecnología SDN (Software Defined Networking).</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="solution-content">
+              <p>
+                Identificamos, monitoreamos y mejoramos continuamente con la
+                aplicación de las mejores prácticas y recomendaciones de
+                entidades internacionales en la materia, para garantizar la
+                seguridad de sus redes OT y los puntos de convergencia OT/IT.
+              </p>
+
+              <ul class="solution-features">
+                <li>
+                  <i class="fas fa-check-circle"></i> Implementación de buenas
+                  prácticas de ciberseguridad para redes de datos para Sistemas
+                  de control resilientes.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Mejora de fiabilidad y
+                  protección automatizada de redes OT con prácticas basadas en
+                  NERC PRC-005. Inspección, pruebas, informes y auditoría.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Defensa en profundidad
+                  (Deep inspection package) en protocolos de comunicación
+                  específicos para la industria eléctrica y los sistemas de
+                  control.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Implementación de
+                  estrategias de detección de intrusiones en redes de datos OT.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Detección rápida de fallas
+                  e intrusiones, aislamiento y recuperación en redes Ethernet
+                  para telecontrol y aplicaciones de transmisión de datos en
+                  automatismos de alta velocidad.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Pruebas de campo para
+                  verificación de respuesta (performance) de redes inalámbricas,
+                  cableadas o de FO.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Ciberseguridad de datos en
+                  SCADAs para sistemas de energía eléctrica, smart grids e
+                  industria en general.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Análisis e implementación
+                  de estrategias de mitigación de riesgos.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Implementación de
+                  seguridad en redes de datos en sistemas distribuidos o de área
+                  amplia.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Soluciones de seguridad de
+                  datos en SubEstaciones digitales basadas en estándares
+                  abiertos. IEC61850.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Mejora de protección,
+                  administración y confiabilidad de redes de comunicación
+                  Ethernet en sistemas de operación con hardware basado en
+                  tecnología SDN (Software Defined Networking).
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Servicios -->
     <section class="solution-section">
-        <div class="container">
-            <h2 class="section-main-title text-center">SERVICIOS</h2>
-            
-            <div class="service-grid">
-                <div class="service-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>Seguridad sobre el enlace</h3>
-                    <p>Protección completa de sus enlaces de comunicación con tecnologías de cifrado avanzadas y protocolos seguros.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-tasks"></i>
-                    <h3>Seguridad Gestionada</h3>
-                    <p>Servicios completos de seguridad gestionada para monitorizar, detectar y responder a amenazas en tiempo real.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Análisis de Seguridad</h3>
-                    <p>Evaluación exhaustiva de sus sistemas para identificar vulnerabilidades y proponer medidas correctivas.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-headset"></i>
-                    <h3>Consultoría</h3>
-                    <p>Asesoramiento especializado en ciberseguridad para diseñar estrategias adaptadas a sus necesidades específicas.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-main-title text-center">SERVICIOS</h2>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <i class="fas fa-lock"></i>
+            <h3>Seguridad sobre el enlace</h3>
+            <p>
+              Protección completa de sus enlaces de comunicación con tecnologías
+              de cifrado avanzadas y protocolos seguros.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-tasks"></i>
+            <h3>Seguridad Gestionada</h3>
+            <p>
+              Servicios completos de seguridad gestionada para monitorizar,
+              detectar y responder a amenazas en tiempo real.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Análisis de Seguridad</h3>
+            <p>
+              Evaluación exhaustiva de sus sistemas para identificar
+              vulnerabilidades y proponer medidas correctivas.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-headset"></i>
+            <h3>Consultoría</h3>
+            <p>
+              Asesoramiento especializado en ciberseguridad para diseñar
+              estrategias adaptadas a sus necesidades específicas.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Enfoque y Metodología -->
     <section class="solution-section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Nuestro Enfoque</h2>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Detección Rápida</h4>
-                            <p>Detección rápida de fallas e intrusiones, aislamiento y recuperación en redes Ethernet para telecontrol y aplicaciones de transmisión de datos en automatismos de alta velocidad.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Pruebas Especializadas</h4>
-                            <p>Pruebas de campo para verificación de respuesta (performance) de redes inalámbricas, cableadas o de FO.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-shield-virus"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Protección SCADA</h4>
-                            <p>Ciberseguridad de datos en SCADAs para sistemas de energía eléctrica, smart grids e industria en general.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Metodología</h2>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-search-dollar"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Análisis de Riesgos</h4>
-                            <p>Análisis e implementación de estrategias de mitigación de riesgos para sus sistemas críticos.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Seguridad en Redes Distribuidas</h4>
-                            <p>Implementación de seguridad en redes de datos en sistemas distribuidos o de área amplia.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="approach-item">
-                        <div class="approach-icon">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <div class="approach-content">
-                            <h4>Soluciones para Subestaciones</h4>
-                            <p>Soluciones de seguridad de datos en SubEstaciones digitales basadas en estándares abiertos. IEC61850.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Nuestro Enfoque</h2>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Detección Rápida</h4>
+                <p>
+                  Detección rápida de fallas e intrusiones, aislamiento y
+                  recuperación en redes Ethernet para telecontrol y aplicaciones
+                  de transmisión de datos en automatismos de alta velocidad.
+                </p>
+              </div>
             </div>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Pruebas Especializadas</h4>
+                <p>
+                  Pruebas de campo para verificación de respuesta (performance)
+                  de redes inalámbricas, cableadas o de FO.
+                </p>
+              </div>
+            </div>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-shield-virus"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Protección SCADA</h4>
+                <p>
+                  Ciberseguridad de datos en SCADAs para sistemas de energía
+                  eléctrica, smart grids e industria en general.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="mb-4">Metodología</h2>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-search-dollar"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Análisis de Riesgos</h4>
+                <p>
+                  Análisis e implementación de estrategias de mitigación de
+                  riesgos para sus sistemas críticos.
+                </p>
+              </div>
+            </div>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Seguridad en Redes Distribuidas</h4>
+                <p>
+                  Implementación de seguridad en redes de datos en sistemas
+                  distribuidos o de área amplia.
+                </p>
+              </div>
+            </div>
+
+            <div class="approach-item">
+              <div class="approach-icon">
+                <i class="fas fa-industry"></i>
+              </div>
+              <div class="approach-content">
+                <h4>Soluciones para Subestaciones</h4>
+                <p>
+                  Soluciones de seguridad de datos en SubEstaciones digitales
+                  basadas en estándares abiertos. IEC61850.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2>¿Necesita proteger sus sistemas críticos?</h2>
-                    <p class="lead">Contáctenos hoy mismo para recibir asesoramiento personalizado y descubrir cómo nuestras soluciones de ciberseguridad pueden proteger su infraestructura.</p>
-                    <a href="../index.html#contact" class="btn btn-primary">Solicitar una Consultoría</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>¿Necesita proteger sus sistemas críticos?</h2>
+            <p class="lead">
+              Contáctenos hoy mismo para recibir asesoramiento personalizado y
+              descubrir cómo nuestras soluciones de ciberseguridad pueden
+              proteger su infraestructura.
+            </p>
+            <a href="../index.html#contact" class="btn btn-primary"
+              >Solicitar una Consultoría</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="footer-brand">
-                        <img src="../Imagenes/logo.png" alt="CuencoTech">
-                    </div>
-                    <p class="footer-description">Especialistas en soluciones tecnológicas innovadoras para optimizar procesos organizacionales.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4">
-                    <h4 class="footer-title">Enlaces</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../index.html#about">Nosotros</a></li>
-                        <li><a href="../index.html#solutions">Soluciones</a></li>
-                        <li><a href="../index.html#partners">Alianzas</a></li>
-                        <li><a href="../index.html#markets">Mercados</a></li>
-                        <li><a href="../index.html#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4">
-                    <h4 class="footer-title">Soluciones</h4>
-                    <ul class="footer-links">
-                        <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
-                        <li><a href="/soluciones/movilidadYseguridad.html">Movilidad y Seguridad</a></li>
-                        <li><a href="/soluciones/comunicacionesYconectividad.html">Comunicaciones</a></li>
-                        <li><a href="/soluciones/ciberseguridad.html">Ciberseguridad</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4">
-                    <h4 class="footer-title">Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056</li>
-                        <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
-                        <li><i class="fas fa-envelope me-2"></i> contacto@cuencotech.com</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="footer-brand">
+              <img src="../Imagenes/logo.png" alt="CuencoTech" />
             </div>
-            <div class="row">
-                <div class="col-12 text-center copyright">
-                    <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
-                </div>
+            <p class="footer-description">
+              Especialistas en soluciones tecnológicas innovadoras para
+              optimizar procesos organizacionales.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+          </div>
+          <div class="col-lg-2 col-md-4 mb-4">
+            <h4 class="footer-title">Enlaces</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#about">Nosotros</a></li>
+              <li><a href="../index.html#solutions">Soluciones</a></li>
+              <li><a href="../index.html#partners">Alianzas</a></li>
+              <li><a href="../index.html#markets">Mercados</a></li>
+              <li><a href="../index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h4 class="footer-title">Soluciones</h4>
+            <ul class="footer-links">
+              <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
+              <li>
+                <a href="/soluciones/movilidadYseguridad.html"
+                  >Movilidad y Seguridad</a
+                >
+              </li>
+              <li>
+                <a href="/soluciones/comunicacionesYconectividad.html"
+                  >Comunicaciones</a
+                >
+              </li>
+              <li>
+                <a href="/soluciones/ciberseguridad.html">Ciberseguridad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056
+              </li>
+              <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> contacto@cuencotech.com
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12 text-center copyright">
+            <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            const logo = document.querySelector('.navbar-brand img');
-            
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow');
-                navbar.style.backgroundColor = 'rgba(26, 26, 64, 0.98)';
-                logo.width = 80;
-            } else {
-                navbar.classList.remove('shadow');
-                navbar.style.backgroundColor = 'rgba(26, 26, 64, 0.95)';
-                logo.width = 100;
-            }
-        });
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const logo = document.querySelector(".navbar-brand img");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow");
+          navbar.style.backgroundColor = "rgba(26, 26, 64, 0.98)";
+          logo.width = 80;
+        } else {
+          navbar.classList.remove("shadow");
+          navbar.style.backgroundColor = "rgba(26, 26, 64, 0.95)";
+          logo.width = 100;
+        }
+      });
     </script>
-   <!-- Bootstrap & jQuery JS -->
+    <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Navbar scroll effect - Versión Mejorada
-        window.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            const logo = document.querySelector('.navbar-brand img');
-            
-            // Función para manejar el scroll
-            function handleScroll() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                    // Detener la animación del logo cuando se hace scroll
-                    logo.classList.remove('logo-animation');
-                } else {
-                    navbar.classList.remove('scrolled');
-                    // Solo reactivar la animación si estamos en la página de inicio
-                    if (document.body.classList.contains('home-page')) {
-                        logo.classList.add('logo-animation');
-                    }
-                }
-            }
-            
-            // Verificar si estamos en la página de inicio
-            if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
-                document.body.classList.add('home-page');
-                logo.classList.add('logo-animation');
-            }
-            
-            // Ejecutar al cargar y al hacer scroll
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-            
-            // Prevenir el comportamiento por defecto de los enlaces
-            document.querySelectorAll('a[href="#"]').forEach(link => {
-                link.addEventListener('click', e => e.preventDefault());
-            });
-        });
-    </script>
-</body>
+      // Navbar scroll effect - Versión Mejorada
+      window.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector(".navbar");
+        const logo = document.querySelector(".navbar-brand img");
 
+        // Función para manejar el scroll
+        function handleScroll() {
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+            // Detener la animación del logo cuando se hace scroll
+            logo.classList.remove("logo-animation");
+          } else {
+            navbar.classList.remove("scrolled");
+            // Solo reactivar la animación si estamos en la página de inicio
+            if (document.body.classList.contains("home-page")) {
+              logo.classList.add("logo-animation");
+            }
+          }
+        }
+
+        // Verificar si estamos en la página de inicio
+        if (
+          window.location.pathname.endsWith("index.html") ||
+          window.location.pathname.endsWith("/")
+        ) {
+          document.body.classList.add("home-page");
+          logo.classList.add("logo-animation");
+        }
+
+        // Ejecutar al cargar y al hacer scroll
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+
+        // Prevenir el comportamiento por defecto de los enlaces
+        document.querySelectorAll('a[href="#"]').forEach((link) => {
+          link.addEventListener("click", (e) => e.preventDefault());
+        });
+      });
+    </script>
+  </body>
 </html>

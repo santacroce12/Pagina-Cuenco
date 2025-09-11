@@ -1,396 +1,573 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movilidad y Seguridad Urbana - CuencoTech</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styleMovilidad.css">
+    <link rel="stylesheet" href="styleMovilidad.css" />
     <!-- Agregar en el href luego la imagen de logo que se desee-->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-</head>
-<body>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-               <!-- Ruta corregida para el logo (ajusta según tu estructura de carpetas) -->
-              <img src="../Imagenes/logo.png" alt="CuencoTech" width="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#about">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#solutions">Soluciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#markets">Mercados</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#partners">Alianzas</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <!-- Ruta corregida para el logo (ajusta según tu estructura de carpetas) -->
+          <img src="../Imagenes/logo.png" alt="CuencoTech" width="100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#solutions">Soluciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#markets">Mercados</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#partners">Alianzas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="solution-hero">
-         <!-- Video de fondo -->
-    <video autoplay muted loop playsinline class="hero-video">
-          <source src="https://res.cloudinary.com/df3avxpqr/video/upload/Vídeo_sin_título_Hecho_con_Clipchamp_1_xbldkh.mp4" type="video/mp4">
+      <!-- Video de fondo -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <source
+          src="https://res.cloudinary.com/df3avxpqr/video/upload/Vídeo_sin_título_Hecho_con_Clipchamp_1_xbldkh.mp4"
+          type="video/mp4"
+        />
 
         Tu navegador no soporta video HTML5.
-    </video>
+      </video>
 
-    <!-- Overlay para oscurecer el video -->
-    <div class="video-overlay"></div>
-        <div class="container">
-            <div class="row hero-content">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="hero-title">Movilidad y Seguridad Urbana</h1>
-                    <p class="hero-subtitle">Soluciones inteligentes para la gestión del estacionamiento medido y seguridad vial en entornos urbanos</p>
-                    <div class="hero-buttons">
-                        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contactar Ahora</a>
-                        <a href="../index.html#solutions" class="btn btn-outline-light btn-lg ms-3">Ver Soluciones</a>
-                    </div>
-                </div>
+      <!-- Overlay para oscurecer el video -->
+      <div class="video-overlay"></div>
+      <div class="container">
+        <div class="row hero-content">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="hero-title">Movilidad y Seguridad Urbana</h1>
+            <p class="hero-subtitle">
+              Soluciones inteligentes para la gestión del estacionamiento medido
+              y seguridad vial en entornos urbanos
+            </p>
+            <div class="hero-buttons">
+              <a href="../index.html#contact" class="btn btn-primary btn-lg"
+                >Contactar Ahora</a
+              >
+              <a
+                href="../index.html#solutions"
+                class="btn btn-outline-light btn-lg ms-3"
+                >Ver Soluciones</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-     <!-- Intro Section -->
+    <!-- Intro Section -->
     <section class="solution-intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <h2>Transformando la Movilidad Urbana con Tecnología Inteligente</h2>
-                    <p class="lead">Nuestras soluciones integrales optimizan la gestión del estacionamiento, mejoran la seguridad vial y contribuyen a crear ciudades más eficientes y sostenibles.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>
+              Transformando la Movilidad Urbana con Tecnología Inteligente
+            </h2>
+            <p class="lead">
+              Nuestras soluciones integrales optimizan la gestión del
+              estacionamiento, mejoran la seguridad vial y contribuyen a crear
+              ciudades más eficientes y sostenibles.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Movilidad y Seguridad Urbana Section -->
     <section id="movilidad" class="solution-section bg-dark-custom text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-main-title">MOVILIDAD Y SEGURIDAD URBANA</h2>
-                    <p class="lead">Implementamos la solución para la gestión del estacionamiento medido en la vía pública con mayor desarrollo y penetración en nuestro país</p>
-                </div>
-            </div>
-            
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="solution-content">
-                        <p>Nuestra solución de movilidad y seguridad urbana ofrece:</p>
-                        <ul class="solution-features">
-                            <li><i class="fas fa-check-circle"></i> Adaptable a las necesidades de cada municipio</li>
-                            <li><i class="fas fa-check-circle"></i> Bajo costo de implementación y operación</li>
-                            <li><i class="fas fa-check-circle"></i> No contamina la visual ni entorpece el desplazamiento de las personas</li>
-                            <li><i class="fas fa-check-circle"></i> No requiere ninguna obra civil</li>
-                            <li><i class="fas fa-check-circle"></i> Elimina totalmente el uso de tickets de papel</li>
-                            <li><i class="fas fa-check-circle"></i> Permite hacer control de ocupación sin utilizar sensores</li>
-                            <li><i class="fas fa-check-circle"></i> Geolocalización de grúas para la recolección de vehículos en infracción</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="solution-image">
-                        <img src="../Imagenes/Soluciones/Estacionamiento.png" alt="Movilidad y Seguridad Urbana" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="section-main-title">MOVILIDAD Y SEGURIDAD URBANA</h2>
+            <p class="lead">
+              Implementamos la solución para la gestión del estacionamiento
+              medido en la vía pública con mayor desarrollo y penetración en
+              nuestro país
+            </p>
+          </div>
         </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="solution-content">
+              <p>Nuestra solución de movilidad y seguridad urbana ofrece:</p>
+              <ul class="solution-features">
+                <li>
+                  <i class="fas fa-check-circle"></i> Adaptable a las
+                  necesidades de cada municipio
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Bajo costo de
+                  implementación y operación
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> No contamina la visual ni
+                  entorpece el desplazamiento de las personas
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> No requiere ninguna obra
+                  civil
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Elimina totalmente el uso
+                  de tickets de papel
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Permite hacer control de
+                  ocupación sin utilizar sensores
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Geolocalización de grúas
+                  para la recolección de vehículos en infracción
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="solution-image">
+              <img
+                src="../Imagenes/Soluciones/Estacionamiento.png"
+                alt="Movilidad y Seguridad Urbana"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Parking Privado Section -->
     <section id="parking" class="solution-section bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="solution-content">
-                        <h2 class="section-main-title">PARKING PRIVADO</h2>
-                        <p>Implementamos sistemas de estacionamiento inteligentes con tecnología de reconocimiento de matrículas, con o sin barreras, tecnología con o sin ticket o una solución híbrida que proporciona lo mejor de ambos mundos.</p>
-                        <p>Además sistemas de guía inteligentes con utilización optimizada de espacios de estacionamiento, hasta procesos de pago cómodos que se pueden llevar a cabo sin fricciones y digitalmente.</p>
-                        
-                        <h3 class="solution-subsection-title">Tenemos una solución para cada lugar</h3>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="solution-features">
-                                    <li><i class="fas fa-building"></i> Centros comerciales</li>
-                                    <li><i class="fas fa-plane"></i> Aeropuertos</li>
-                                    <li><i class="fas fa-hotel"></i> Hoteles</li>
-                                    <li><i class="fas fa-school"></i> Colegios / Universidades</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="solution-features">
-                                    <li><i class="fas fa-hospital"></i> Hospitales Clínicas</li>
-                                    <li><i class="fas fa-football"></i> Estadios</li>
-                                    <li><i class="fas fa-industry"></i> Complejos Industriales</li>
-                                    <li><i class="fas fa-store"></i> Supermercados</li>
-                                    <li><i class="fas fa-parking"></i> Playones municipales</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Botón de descarga con funcionalidad agregada -->
-                        <div class="mt-4">
-                            <button id="downloadBtn" class="btn btn-download">
-                                <i class="fas fa-download me-2"></i> DESCARGAR PRESENTACIÓN BROCHURE TNF Parking Privados
-                            </button>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="solution-content">
+              <h2 class="section-main-title">PARKING PRIVADO</h2>
+              <p>
+                Implementamos sistemas de estacionamiento inteligentes con
+                tecnología de reconocimiento de matrículas, con o sin barreras,
+                tecnología con o sin ticket o una solución híbrida que
+                proporciona lo mejor de ambos mundos.
+              </p>
+              <p>
+                Además sistemas de guía inteligentes con utilización optimizada
+                de espacios de estacionamiento, hasta procesos de pago cómodos
+                que se pueden llevar a cabo sin fricciones y digitalmente.
+              </p>
+
+              <h3 class="solution-subsection-title">
+                Tenemos una solución para cada lugar
+              </h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="solution-features">
+                    <li><i class="fas fa-building"></i> Centros comerciales</li>
+                    <li><i class="fas fa-plane"></i> Aeropuertos</li>
+                    <li><i class="fas fa-hotel"></i> Hoteles</li>
+                    <li>
+                      <i class="fas fa-school"></i> Colegios / Universidades
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="solution-image">
-                        <img src="../Imagenes/Soluciones/rre.png" alt="Parking Privado" class="img-fluid rounded shadow">
-                    </div>
+                <div class="col-md-6">
+                  <ul class="solution-features">
+                    <li><i class="fas fa-hospital"></i> Hospitales Clínicas</li>
+                    <li><i class="fas fa-football"></i> Estadios</li>
+                    <li>
+                      <i class="fas fa-industry"></i> Complejos Industriales
+                    </li>
+                    <li><i class="fas fa-store"></i> Supermercados</li>
+                    <li><i class="fas fa-parking"></i> Playones municipales</li>
+                  </ul>
                 </div>
+              </div>
+
+              <!-- Botón de descarga con funcionalidad agregada -->
+              <div class="mt-4">
+                <button id="downloadBtn" class="btn btn-download">
+                  <i class="fas fa-download me-2"></i> DESCARGAR PRESENTACIÓN
+                  BROCHURE TNF Parking Privados
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="solution-image">
+              <img
+                src="../Imagenes/Soluciones/rre.png"
+                alt="Parking Privado"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Productos Section -->
     <section id="productos" class="solution-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-main-title">PRODUCTOS</h2>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="fas fa-camera fa-3x text-primary mb-3"></i>
-                            <h4 class="card-title">LPR Reconocimiento de patentes</h4>
-                            <p class="card-text">Sistemas avanzados de reconocimiento de matrículas para un control eficiente del acceso vehicular.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="fas fa-sliders-h fa-3x text-primary mb-3"></i>
-                            <h4 class="card-title">Barreras</h4>
-                            <p class="card-text">Sistemas de control de acceso vehicular con barreras automáticas de alta seguridad y durabilidad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="fas fa-sign fa-3x text-primary mb-3"></i>
-                            <h4 class="card-title">Cartelería</h4>
-                            <p class="card-text">Señalética inteligente para una mejor orientación y gestión del tráfico en estacionamientos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="fas fa-desktop fa-3x text-primary mb-3"></i>
-                            <h4 class="card-title">Tótems de autogestión</h4>
-                            <p class="card-text">Terminales de auto-servicio para el pago y gestión de estacionamiento de forma intuitiva.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="fas fa-car fa-3x text-primary mb-3"></i>
-                            <h4 class="card-title">Gestión de disponibilidad de espacios</h4>
-                            <p class="card-text">Sistemas inteligentes que indican la disponibilidad de plazas de estacionamiento en tiempo real.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="section-main-title">PRODUCTOS</h2>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body text-center">
+                <i class="fas fa-camera fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">LPR Reconocimiento de patentes</h4>
+                <p class="card-text">
+                  Sistemas avanzados de reconocimiento de matrículas para un
+                  control eficiente del acceso vehicular.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body text-center">
+                <i class="fas fa-sliders-h fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Barreras</h4>
+                <p class="card-text">
+                  Sistemas de control de acceso vehicular con barreras
+                  automáticas de alta seguridad y durabilidad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body text-center">
+                <i class="fas fa-sign fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Cartelería</h4>
+                <p class="card-text">
+                  Señalética inteligente para una mejor orientación y gestión
+                  del tráfico en estacionamientos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body text-center">
+                <i class="fas fa-desktop fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Tótems de autogestión</h4>
+                <p class="card-text">
+                  Terminales de auto-servicio para el pago y gestión de
+                  estacionamiento de forma intuitiva.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body text-center">
+                <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">
+                  Gestión de disponibilidad de espacios
+                </h4>
+                <p class="card-text">
+                  Sistemas inteligentes que indican la disponibilidad de plazas
+                  de estacionamiento en tiempo real.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Gestion Municipal Section -->
-    <section id="gestion-municipal" class="solution-section bg-dark-custom text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="solution-content">
-                        <h2 class="section-main-title">GESTIÓN MUNICIPAL</h2>
-                        <p>Desarrollamos sistemas integrales para la seguridad y gestión urbana de municipios, mejorando la calidad de vida de los ciudadanos.</p>
-                        
-                        <h3 class="solution-subsection-title">Nuestras soluciones incluyen:</h3>
-                        <ul class="solution-features">
-                            <li><i class="fas fa-bell"></i> Sistema de alarmas comunitarias</li>
-                            <li><i class="fas fa-mobile-alt"></i> Desarrollo de sistema de alarma para barrios con activación inalámbrica, mediante una app o control remoto RF</li>
-                            <li><i class="fas fa-exclamation-circle"></i> Botones de pánico</li>
-                            <li><i class="fas fa-bus"></i> Paradas seguras</li>
-                            <li><i class="fas fa-recycle"></i> Estaciones de reciclado urbano</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="solution-image">
-                         <img src="https://ecuatecnology.com/wp-content/uploads/2020/10/alarma-comunitaria-funcionamiento.jpg" alt="Centro de control municipal inteligente" class="img-fluid rounded shadow">  </div>
-                </div>
+    <section
+      id="gestion-municipal"
+      class="solution-section bg-dark-custom text-white"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="solution-content">
+              <h2 class="section-main-title">GESTIÓN MUNICIPAL</h2>
+              <p>
+                Desarrollamos sistemas integrales para la seguridad y gestión
+                urbana de municipios, mejorando la calidad de vida de los
+                ciudadanos.
+              </p>
+
+              <h3 class="solution-subsection-title">
+                Nuestras soluciones incluyen:
+              </h3>
+              <ul class="solution-features">
+                <li>
+                  <i class="fas fa-bell"></i> Sistema de alarmas comunitarias
+                </li>
+                <li>
+                  <i class="fas fa-mobile-alt"></i> Desarrollo de sistema de
+                  alarma para barrios con activación inalámbrica, mediante una
+                  app o control remoto RF
+                </li>
+                <li>
+                  <i class="fas fa-exclamation-circle"></i> Botones de pánico
+                </li>
+                <li><i class="fas fa-bus"></i> Paradas seguras</li>
+                <li>
+                  <i class="fas fa-recycle"></i> Estaciones de reciclado urbano
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="solution-image">
+              <img
+                src="https://ecuatecnology.com/wp-content/uploads/2020/10/alarma-comunitaria-funcionamiento.jpg"
+                alt="Centro de control municipal inteligente"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Seguridad Vial Section -->
     <section id="seguridad-vial" class="solution-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-main-title">SEGURIDAD VIAL Y CIUDADANA</h2>
-                    <p class="lead">Soluciones integrales para el control del tránsito y la mejora de la seguridad vial</p>
-                </div>
-            </div>
-            
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="solution-content">
-                        <h3 class="solution-subsection-title">Soluciones de tránsito</h3>
-                        <p>Plataforma y equipamiento para el control y procesamiento de infracciones de tránsito:</p>
-                        <ul class="solution-features">
-                            <li><i class="fas fa-tachometer-alt"></i> Exceso de velocidad</li>
-                            <li><i class="fas fa-traffic-light"></i> Control de cruces en rojo</li>
-                            <li><i class="fas fa-lightbulb"></i> Luces encendidas y cinturones de seguridad</li>
-                            <li><i class="fas fa-weight"></i> Sistema de control de carga y peso dinámicos</li>
-                            <li><i class="fas fa-car"></i> Identificación y conteo de vehículos</li>
-                            <li><i class="fas fa-cloud-sun"></i> Estaciones meteorológicas y alarmas tempranas</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="solution-image">
-                        <img src="https://learnopencv.com/wp-content/uploads/2024/01/drawing-bbox-1024x572.png" alt="Seguridad Vial" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="section-main-title">SEGURIDAD VIAL Y CIUDADANA</h2>
+            <p class="lead">
+              Soluciones integrales para el control del tránsito y la mejora de
+              la seguridad vial
+            </p>
+          </div>
         </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="solution-content">
+              <h3 class="solution-subsection-title">Soluciones de tránsito</h3>
+              <p>
+                Plataforma y equipamiento para el control y procesamiento de
+                infracciones de tránsito:
+              </p>
+              <ul class="solution-features">
+                <li>
+                  <i class="fas fa-tachometer-alt"></i> Exceso de velocidad
+                </li>
+                <li>
+                  <i class="fas fa-traffic-light"></i> Control de cruces en rojo
+                </li>
+                <li>
+                  <i class="fas fa-lightbulb"></i> Luces encendidas y cinturones
+                  de seguridad
+                </li>
+                <li>
+                  <i class="fas fa-weight"></i> Sistema de control de carga y
+                  peso dinámicos
+                </li>
+                <li>
+                  <i class="fas fa-car"></i> Identificación y conteo de
+                  vehículos
+                </li>
+                <li>
+                  <i class="fas fa-cloud-sun"></i> Estaciones meteorológicas y
+                  alarmas tempranas
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="solution-image">
+              <img
+                src="https://learnopencv.com/wp-content/uploads/2024/01/drawing-bbox-1024x572.png"
+                alt="Seguridad Vial"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2>¿Listo para transformar la movilidad urbana de tu ciudad?</h2>
-                    <p class="lead">Contáctanos hoy mismo y descubre cómo nuestras soluciones pueden optimizar la gestión del estacionamiento y la seguridad vial en tu municipio.</p>
-                    <a href="../index.html#contact" class="btn btn-primary btn-lg">Solicitar Consultoría Gratuita</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>¿Listo para transformar la movilidad urbana de tu ciudad?</h2>
+            <p class="lead">
+              Contáctanos hoy mismo y descubre cómo nuestras soluciones pueden
+              optimizar la gestión del estacionamiento y la seguridad vial en tu
+              municipio.
+            </p>
+            <a href="../index.html#contact" class="btn btn-primary btn-lg"
+              >Solicitar Consultoría Gratuita</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="footer-brand">
-                        <img src="../Imagenes/logo.png" alt="CuencoTech">
-                    </div>
-                    <p class="footer-description">Especialistas en soluciones tecnológicas innovadoras para optimizar procesos organizacionales.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4">
-                    <h4 class="footer-title">Enlaces</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../index.html#about">Nosotros</a></li>
-                        <li><a href="../index.html#solutions">Soluciones</a></li>
-                        <li><a href="../index.html#partners">Alianzas</a></li>
-                        <li><a href="../index.html#markets">Mercados</a></li>
-                        <li><a href="../index.html#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4">
-                    <h4 class="footer-title">Soluciones</h4>
-                    <ul class="footer-links">
-                        <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
-                        <li><a href="/soluciones/movilidadYseguridad.html">Movilidad y Seguridad</a></li>
-                        <li><a href="/soluciones/comunicacionesYconectividad.html">Comunicaciones</a></li>
-                        <li><a href="/soluciones/ciberseguridad.html">Ciberseguridad</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4">
-                    <h4 class="footer-title">Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056</li>
-                        <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
-                        <li><i class="fas fa-envelope me-2"></i> contacto@cuencotech.com</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="footer-brand">
+              <img src="../Imagenes/logo.png" alt="CuencoTech" />
             </div>
-            <div class="row">
-                <div class="col-12 text-center copyright">
-                    <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
-                </div>
+            <p class="footer-description">
+              Especialistas en soluciones tecnológicas innovadoras para
+              optimizar procesos organizacionales.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+          </div>
+          <div class="col-lg-2 col-md-4 mb-4">
+            <h4 class="footer-title">Enlaces</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#about">Nosotros</a></li>
+              <li><a href="../index.html#solutions">Soluciones</a></li>
+              <li><a href="../index.html#partners">Alianzas</a></li>
+              <li><a href="../index.html#markets">Mercados</a></li>
+              <li><a href="../index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h4 class="footer-title">Soluciones</h4>
+            <ul class="footer-links">
+              <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
+              <li>
+                <a href="/soluciones/movilidadYseguridad.html"
+                  >Movilidad y Seguridad</a
+                >
+              </li>
+              <li>
+                <a href="/soluciones/comunicacionesYconectividad.html"
+                  >Comunicaciones</a
+                >
+              </li>
+              <li>
+                <a href="/soluciones/ciberseguridad.html">Ciberseguridad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056
+              </li>
+              <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> contacto@cuencotech.com
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12 text-center copyright">
+            <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
     </footer>
-
 
     <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script>
-        // Navbar scroll effect
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 50) {
-                $('.navbar').addClass('shadow');
-                $('.navbar').css('background-color', 'rgba(13, 110, 253, 0.95)');
-                $('.navbar-brand img').attr('width', '80');
-            } else {
-                $('.navbar').removeClass('shadow');
-                $('.navbar').css('background-color', 'rgba(13, 110, 253, 0.95)');
-                $('.navbar-brand img').attr('width', '100');
-            }
-        });
+      // Navbar scroll effect
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 50) {
+          $(".navbar").addClass("shadow");
+          $(".navbar").css("background-color", "rgba(13, 110, 253, 0.95)");
+          $(".navbar-brand img").attr("width", "80");
+        } else {
+          $(".navbar").removeClass("shadow");
+          $(".navbar").css("background-color", "rgba(13, 110, 253, 0.95)");
+          $(".navbar-brand img").attr("width", "100");
+        }
+      });
 
-        // Función para descargar PDF
-        document.getElementById('downloadBtn').addEventListener('click', function() {
-            // URL del PDF que quieres descargar (reemplaza con la ruta correcta)
-            const pdfUrl = '../Pdf/Brochure TNF Parkings privados.pdf';
-            
-            // Crear un enlace temporal
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            
-            // Nombre del archivo que se descargará
-            link.download = 'Brochure-TNF-Parking-Privados.pdf';
-            
-            // Simular clic en el enlace
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+      // Función para descargar PDF
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          // URL del PDF que quieres descargar (reemplaza con la ruta correcta)
+          const pdfUrl = "../Pdf/Brochure TNF Parkings privados.pdf";
+
+          // Crear un enlace temporal
+          const link = document.createElement("a");
+          link.href = pdfUrl;
+
+          // Nombre del archivo que se descargará
+          link.download = "Brochure-TNF-Parking-Privados.pdf";
+
+          // Simular clic en el enlace
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
         });
     </script>
-</body>
+  </body>
 </html>
