@@ -530,8 +530,7 @@
         </div>
       </div>
     </footer>
-
-    </body>
+  </body>
 </html>
 <!-- jQuery primero -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -542,29 +541,23 @@
 <!-- Y al final tu script -->
 <script src="../script.js"></script>
 
+<!-- Custom JS -->
+<script>
+  // Función para descargar PDF
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    // URL del PDF que quieres descargar (reemplaza con la ruta correcta)
+    const pdfUrl = "../Pdf/Brochure TNF Parkings privados.pdf";
 
-    <!-- Custom JS -->
-    <script>
-    
-      // Función para descargar PDF
-      document
-        .getElementById("downloadBtn")
-        .addEventListener("click", function () {
-          // URL del PDF que quieres descargar (reemplaza con la ruta correcta)
-          const pdfUrl = "../Pdf/Brochure TNF Parkings privados.pdf";
+    // Crear un enlace temporal
+    const link = document.createElement("a");
+    link.href = pdfUrl;
 
-          // Crear un enlace temporal
-          const link = document.createElement("a");
-          link.href = pdfUrl;
+    // Nombre del archivo que se descargará
+    link.download = "Brochure-TNF-Parking-Privados.pdf";
 
-          // Nombre del archivo que se descargará
-          link.download = "Brochure-TNF-Parking-Privados.pdf";
-
-          // Simular clic en el enlace
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        });
-    </script>
-
-</html>
+    // Simular clic en el enlace
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
