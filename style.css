@@ -119,6 +119,22 @@ h6 {
   object-fit: cover; /* se comporta como background-size: cover */
   z-index: -2;
 }
+.solution-hero {
+  position: relative;
+  padding: 150px 0 100px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 64, 0.7);
+  z-index: -1;
+}
 
 .hero:before {
   content: "";
