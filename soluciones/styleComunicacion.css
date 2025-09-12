@@ -705,3 +705,176 @@ footer::before {
 .btn-download.success:hover {
   background-color: #218838;
 }
+
+/* Contact Form Styles */
+.contact-form-card {
+  background: rgba(16, 16, 53, 0.95); /* 🔹 Fondo morado translúcido */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  color: white; /* 🔹 Asegura que el texto se vea sobre el fondo oscuro */
+}
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+} 
+
+/* Títulos */
+.contact-form-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: white; /* 🔹 Cambiado a blanco */
+}
+
+/* Labels */
+.contact-form-card label {
+  font-weight: 600;
+  color: #ddd; /* 🔹 Mejor contraste sobre fondo oscuro */
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Inputs y textarea */
+.contact-form-card input,
+.contact-form-card textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* 🔹 Semi-transparente */
+  color: white;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #bbb; /* 🔹 Placeholder visible */
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(44, 111, 214, 0.25);
+}
+
+/* Textarea ajuste */
+.contact-form-card textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* Botón */
+.contact-form-card button {
+  background: var(--gradient);
+  color: white;
+  font-weight: 600;
+  padding: 14px 35px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+/* Fondo de la sección del formulario */
+.contact-form-section {
+  background: linear-gradient(
+    135deg,
+    #1a1a40 0%,
+    #2a2a5a 100%
+  ); /* Igual que .contact */
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.contact-form-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(44,111,214,0.03)"/></svg>');
+  background-size: cover;
+  pointer-events: none; /* 🔹 Esto evita que bloquee el formulario */
+}
+
+/* Estilos para el modal de formulario */
+#contactFormModal .modal-content {
+  background: rgba(16, 16, 53, 0.95);
+  border-radius: 15px;
+  border: none;
+  color: white;
+}
+
+#contactFormModal .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 30px 10px;
+}
+
+#contactFormModal .modal-title {
+  font-weight: 700;
+  color: white;
+}
+
+#contactFormModal .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+#contactFormModal .modal-body {
+  padding: 10px 30px 30px;
+}
+
+#contactFormModal .form-label {
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 8px;
+}
+
+#contactFormModal .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  padding: 12px 15px;
+}
+
+#contactFormModal .form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #2c6fd6;
+  box-shadow: 0 0 0 3px rgba(44, 111, 214, 0.25);
+  color: white;
+}
+
+#contactFormModal .form-control::placeholder {
+  color: #bbb;
+}
+
+#contactFormModal .btn-primary {
+  background: linear-gradient(135deg, #2c6fd6, #1a4fac);
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 14px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+#contactFormModal .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}

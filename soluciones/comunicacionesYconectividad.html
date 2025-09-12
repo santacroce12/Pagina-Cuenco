@@ -56,10 +56,98 @@
             <li class="nav-item">
               <a class="nav-link" href="../index.html#contact">Contacto</a>
             </li>
+             <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contactFormModal"
+                >Comienza tu consulta</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+     <!-- Modal para Formulario de Contacto -->
+    <div
+      class="modal fade"
+      id="contactFormModal"
+      tabindex="-1"
+      aria-labelledby="contactFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactFormModalLabel">
+              Solicitar Información
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="/enviar.php" method="POST">
+              <div class="mb-3">
+                <label for="modal-email" class="form-label">Tu Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="modal-email"
+                  name="email"
+                  placeholder="ejemplo@correo.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="modal-nombre" class="form-label"
+                  >Tu Nombre (opcional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="modal-nombre"
+                  name="nombre"
+                  placeholder=""
+                />
+              </div>
+              <div class="mb-3">
+                <label for="modal-nombre-empresa" class="form-label"
+                  >Nombre de tu empresa (opcional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="modal-nombre-empresa"
+                  name="nombre-empresa"
+                  placeholder=""
+                />
+              </div>
+              <div class="mb-3">
+                <label for="modal-mensaje" class="form-label"
+                  >Mensaje (opcional)</label
+                >
+                <textarea
+                  class="form-control"
+                  id="modal-mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Contanos brevemente tu consulta..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- Hero Section con Video -->
 <section class="solution-hero telecom-hero">
@@ -94,7 +182,7 @@
             href="../index.html#solutions"
             class="btn btn-outline-light btn-lg ms-3"
           >
-            Ver Soluciones
+            Nuestras Soluciones
           </a>
         </div>
       </div>
