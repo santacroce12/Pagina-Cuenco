@@ -46,7 +46,7 @@ h6 {
 
 /* Navbar Styles */
 .navbar {
-  padding: 15px 0;
+  padding: 11px 0;
   transition: all 0.3s ease;
   background-color: rgba(26, 26, 64, 0.95) !important;
    backdrop-filter: blur(10px);
