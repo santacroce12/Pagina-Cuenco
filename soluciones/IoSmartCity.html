@@ -1,178 +1,74 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Integramos sensores, plataformas IoT y analitica para crear smart cities seguras, eficientes y sostenibles con monitoreo en tiempo real y gestion unificada."
+    />
+
+    <!-- Google Analytics (completa content con tu ID GA4 cuando lo tengas) -->
+    <meta name="ga-measurement-id" content="G-K8C4K63MET" />
+
     <title>IoT Smart City - CuencoTech</title>
+
     <!-- Bootstrap 5 CSS -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <!-- Font Awesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <!-- Google Fonts -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styleSmartCity.css" />
-    <!-- Agregar en el href luego la imagen de logo que se desee-->
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../Imagenes/logo.png" alt="CuencoTech" width="100" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#about">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#solutions">Soluciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#markets">Mercados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#partners">Alianzas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#contact">Contacto</a>
-            </li>
-             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#contactFormModal"
-                >Comienza tu consulta</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-     <!-- Modal para Formulario de Contacto -->
-    <div
-      class="modal fade"
-      id="contactFormModal"
-      tabindex="-1"
-      aria-labelledby="contactFormModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactFormModalLabel">
-              Solicitar Información
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="../enviar.php" method="POST">
-              <div class="mb-3">
-                <label for="modal-email" class="form-label">Tu Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="modal-email"
-                  name="email"
-                  placeholder="ejemplo@correo.com"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-nombre" class="form-label"
-                  >Tu Nombre (opcional)</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="modal-nombre"
-                  name="nombre"
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-nombre-empresa" class="form-label"
-                  >Nombre de tu empresa (opcional)</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="modal-nombre-empresa"
-                  name="nombre-empresa"
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-mensaje" class="form-label"
-                  >Mensaje (opcional)</label
-                >
-                <textarea
-                  class="form-control"
-                  id="modal-mensaje"
-                  name="mensaje"
-                  rows="4"
-                  placeholder="Contanos brevemente tu consulta..."
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Enviar
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="../assets/css/solutions/styleSmartCity.css" />
+
+    <link rel="icon" href="../assets/images/2.png" />
+  </head>
+
+  <body data-root-path="..">
+    <div data-component="navbar"></div>
 
     <!-- Hero Section con Video -->
+
     <section class="solution-hero">
       <!-- Video de fondo -->
+
       <video autoplay muted loop playsinline class="hero-video">
         <source
           src="https://res.cloudinary.com/df3avxpqr/video/upload/Vídeo_sin_título_Hecho_con_Clipchamp_kimwql.mp4"
           type="video/mp4"
         />
+
         Tu navegador no soporta video HTML5.
       </video>
 
       <!-- Overlay para oscurecer el video -->
+
       <div class="video-overlay"></div>
 
       <div class="container">
         <div class="row hero-content">
           <div class="col-lg-8 mx-auto text-center">
             <h1 class="hero-title">IoT Smart City</h1>
+
             <p class="hero-subtitle">
               Soluciones inteligentes para ciudades del futuro, integrando
               tecnología IoT para una gestión urbana eficiente
@@ -182,6 +78,7 @@
               <a href="../index.html#contact" class="btn btn-primary btn-lg"
                 >Contactar Ahora</a
               >
+
               <a
                 href="../index.html#solutions"
                 class="btn btn-outline-light btn-lg"
@@ -194,21 +91,30 @@
     </section>
 
     <!-- Intro Section -->
+
     <section class="solution-intro">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <h2>Transformando Ciudades con Tecnología Inteligente</h2>
+
             <p class="lead">
               Nuestra plataforma IoT Smart City integra soluciones innovadoras
               para optimizar la gestión urbana, mejorar la calidad de vida de
               los ciudadanos y crear entornos más sostenibles y eficientes.
             </p>
+
+            <div class="scroll-indicator" aria-hidden="true">
+              <span class="chevron"></span>
+              <span class="chevron"></span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Monitoreo Section -->
+
     <section id="monitoreo" class="solution-section bg-dark text-white">
       <div class="container">
         <div class="row">
@@ -216,6 +122,7 @@
             <h2 class="section-main-title">
               MONITOREO DE ACTIVOS Y DE EQUIPOS INDUSTRIALES
             </h2>
+
             <p class="lead">
               Soluciones avanzadas para la supervisión inteligente de
               infraestructura crítica
@@ -224,10 +131,12 @@
         </div>
 
         <!-- Transformadores -->
+
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
             <div class="solution-content">
-              <h3 class="solution-subsection-title">TRANSFORMADORES</h3>
+              <h2 class="solution-subsection-title">TRANSFORMADORES</h2>
+
               <p>
                 Plataforma de monitoreo de red de transformadores colocados en
                 líneas de distribución domiciliarias, generando reportes
@@ -236,6 +145,7 @@
                 canales y tableros de control a personal directivo y técnico
                 para una gestión eficiente.
               </p>
+
               <p>
                 Además la implementación de una red LoRaWAN para la
                 interconexión de los distintos transformadores y otros futuros
@@ -245,24 +155,31 @@
               <h4 class="solution-feature-title">
                 Parámetros y funcionalidades monitoreables
               </h4>
+
               <div class="row">
                 <div class="col-md-6">
                   <ul class="solution-features">
                     <li><i class="fas fa-bolt"></i> Factor de potencia</li>
+
                     <li><i class="fas fa-wave-square"></i> Frecuencia</li>
+
                     <li><i class="fas fa-chart-line"></i> Armónicos</li>
                   </ul>
                 </div>
+
                 <div class="col-md-6">
                   <ul class="solution-features">
                     <li><i class="fas fa-bolt"></i> Corriente</li>
+
                     <li><i class="fas fa-bolt"></i> Voltaje</li>
+
                     <li><i class="fas fa-tachometer-alt"></i> Potencia</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
@@ -275,12 +192,14 @@
         </div>
 
         <!-- Monitoreo de Niveles -->
+
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="solution-content">
               <h3 class="solution-subsection-title">
                 MONITOREO DE NIVELES LÍQUIDOS Y SÓLIDOS
               </h3>
+
               <p>
                 Telemedición de Tanques en Instituciones de Salud. Monitoreo
                 activo de todos los elemento involucrados en el suministros de
@@ -288,6 +207,7 @@
                 operativa, calidad del recurso y abastecimiento ininterrumpido
                 para pacientes y personal médico.
               </p>
+
               <p>
                 Un sistema autonomía con una estructura simple y de fácil
                 entendimiento, así como una interfaz sencilla y eficiente al
@@ -296,8 +216,10 @@
 
               <div class="feature-highlight">
                 <i class="fas fa-shield-alt"></i>
+
                 <div>
                   <h5>Seguridad Garantizada</h5>
+
                   <p>
                     Sistemas de monitoreo continuo para garantizar el suministro
                     ininterrumpido
@@ -306,6 +228,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 order-lg-1">
             <div class="solution-image">
               <img
@@ -320,28 +243,34 @@
     </section>
 
     <!-- Personas Section -->
+
     <section id="personas" class="solution-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
               <h2 class="section-main-title">PERSONAS</h2>
+
               <p class="solution-subtitle">
                 Aplicación de posicionamiento GPS que permite:
               </p>
+
               <ul class="solution-features">
                 <li>
                   <i class="fas fa-check-circle"></i> Conocer a cada momento la
                   localización de su personal de terreno, técnicos y operarios.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Organizar y planificar los
                   equipos ágilmente.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Reportar estado de
                   ejecución de tareas o cualquier evento.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Notificar emergencias e
                   Ingresos a zonas de riesgos o de exclusión.
@@ -349,6 +278,7 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
@@ -363,31 +293,38 @@
     </section>
 
     <!-- Gestion Flotas Section -->
+
     <section id="flotas" class="solution-section bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="solution-content">
               <h2 class="section-main-title">GESTIÓN DE FLOTAS</h2>
+
               <p class="solution-subtitle">
                 Brindamos una solución basada en de GPS, telemática y movilidad
               </p>
+
               <ul class="solution-features">
                 <li>
                   <i class="fas fa-check-circle"></i> Ubicación de la flota en
                   tiempo real y sobre cartografía vectorial.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Recorridos, detenimiento.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Cantidad de kilómetros y
                   tiempos de traslado.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Velocidades promedio y
                   consumo de combustible.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Tiempo de conducción và
                   descanso.
@@ -395,10 +332,11 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-6 order-lg-1">
             <div class="solution-image">
               <img
-                src="../Imagenes/Soluciones/Flotas.png"
+                src="../assets/images/Soluciones/Flotas.png"
                 alt="Gestión de Flotas"
                 class="img-fluid rounded shadow"
               />
@@ -409,31 +347,38 @@
     </section>
 
     <!-- Bike Tracker Section -->
+
     <section id="flotas" class="solution-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
               <h2 class="section-main-title">BIKE TRACKER</h2>
+
               <p class="solution-subtitle">
                 El rastreador GPS para bicicletas posee una amplia gama de
                 funciones.
               </p>
+
               <ul class="solution-features">
                 <li>
                   <i class="fas fa-check-circle"></i> Posición actual en el
                   Mapa.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Alerta de Movimiento.
                 </li>
-                <li><i class="fas fa-check-circle"></i> Geo Cerca.</li>
+
+                <li><i class="fas fa-check-circle"></i> Geocerca.</li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Y muchas funciones más.
                 </li>
               </ul>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
@@ -448,17 +393,20 @@
     </section>
 
     <!-- CTA Section -->
+
     <section class="cta-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2>¿Listo para transformar la movilidad urbana de tu ciudad?</h2>
+
             <p class="lead">
               Contáctanos hoy mismo y descubre cómo nuestras soluciones pueden
               optimizar la gestión del estacionamiento y la seguridad vial en tu
               municipio.
             </p>
-            <a href="../index.html" class="btn btn-primary btn-lg"
+
+            <a href="../index.html#contact" class="btn btn-primary btn-lg"
               >Solicitar Consultoría Gratuita</a
             >
           </div>
@@ -466,81 +414,19 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="footer-brand">
-              <img src="../Imagenes/logo.png" alt="CuencoTech" />
-            </div>
-            <p class="footer-description">
-              Especialistas en soluciones tecnológicas innovadoras para
-              optimizar procesos organizacionales.
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 mb-4">
-            <h4 class="footer-title">Enlaces</h4>
-            <ul class="footer-links">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#about">Nosotros</a></li>
-              <li><a href="../index.html#solutions">Soluciones</a></li>
-              <li><a href="../index.html#partners">Alianzas</a></li>
-              <li><a href="../index.html#markets">Mercados</a></li>
-              <li><a href="../index.html#contact">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-4">
-            <h4 class="footer-title">Soluciones</h4>
-            <ul class="footer-links">
-              <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
-              <li>
-                <a href="/soluciones/movilidadYseguridad.html"
-                  >Movilidad y Seguridad</a
-                >
-              </li>
-              <li>
-                <a href="/soluciones/comunicacionesYconectividad.html"
-                  >Comunicaciones</a
-                >
-              </li>
-              <li>
-                <a href="/soluciones/ciberseguridad.html">Ciberseguridad</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-4">
-            <h4 class="footer-title">Contacto</h4>
-            <ul class="footer-links">
-              <li>
-                <i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056
-              </li>
-              <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> contacto@cuencotech.com
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center copyright">
-            <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div data-component="footer"></div>
+
+    <script src="../assets/js/components.js"></script>
 
     <!-- Bootstrap & jQuery JS -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="../script.js"></script>
+
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
+

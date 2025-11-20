@@ -1,0 +1,132 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="%ROOT%/index.html">
+      <img src="%ROOT%/assets/images/logo.png" alt="CuencoTech" width="100" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/index.html#about">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/index.html#solutions">Soluciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/index.html#markets">Mercados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/index.html#partners">Alianzas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/index.html#contact">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/recursos.html">Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="%ROOT%/preguntas-frecuentes.html">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#contactFormModal"
+            >Comenzar consulta</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div
+  class="modal fade"
+  id="contactFormModal"
+  tabindex="-1"
+  aria-labelledby="contactFormModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactFormModalLabel">
+          Solicitar Información
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="%ROOT%/enviar.php" method="POST">
+          <div class="mb-3">
+            <label for="modal-nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="modal-nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="modal-empresa" class="form-label"
+              >Nombre de la empresa (opcional)</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="modal-empresa"
+              name="empresa"
+              placeholder="Empresa o institucion"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="modal-email" class="form-label">Tu email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="modal-mensaje" class="form-label"
+              >Mensaje (minimo 20 caracteres)</label
+            >
+            <textarea
+              class="form-control"
+              id="modal-mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Contanos brevemente tu consulta..."
+              minlength="20"
+            ></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

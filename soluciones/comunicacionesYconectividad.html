@@ -1,201 +1,103 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Soluciones integrales de comunicaciones y conectividad: redes fibra, inalambricas, 5G privado, data center y servicios gestionados para operaciones criticas."
+    />
+
+    <!-- Google Analytics (completa content con tu ID GA4 cuando lo tengas) -->
+    <meta name="ga-measurement-id" content="G-K8C4K63MET" />
+
     <title>Soluciones de Telecomunicaciones</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styleComunicacion.css" />
+
     <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+      rel="stylesheet"
+      href="../assets/css/solutions/styleComunicacion.css"
     />
+
+    <link rel="icon" href="../assets/images/2.png" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+  <body data-root-path="..">
+    <div data-component="navbar"></div>
+
+    <!-- Hero Section con Video -->
+
+    <section class="solution-hero telecom-hero">
+      <!-- Video de fondo -->
+
+      <video autoplay muted loop playsinline class="hero-video">
+        <source
+          src="https://res.cloudinary.com/df3avxpqr/video/upload/v1757553179/1085656-uhd_3840_2160_25fps_rivdc3.mp4"
+          type="video/mp4"
+        />
+
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <!-- Overlay para oscurecer el video -->
+
+      <div class="video-overlay"></div>
+
+      <!-- Contenido encima del video -->
+
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../Imagenes/logo.png" alt="CuencoTech" width="100" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#about">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#solutions">Soluciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#markets">Mercados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#partners">Alianzas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#contact">Contacto</a>
-            </li>
-             <li class="nav-item">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="hero-title">
+              Soluciones Integrales de Telecomunicaciones
+            </h1>
+
+            <p class="hero-subtitle">
+              Conectamos personas, empresas y ciudades con tecnología de
+              vanguardia para un futuro más inteligente y conectado
+            </p>
+
+            <div class="hero-buttons">
+              <a href="../index.html#contact" class="btn btn-primary btn-lg">
+                Contactar Ahora
+              </a>
+
               <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#contactFormModal"
-                >Comienza tu consulta</a
+                href="../index.html#solutions"
+                class="btn btn-outline-light btn-lg ms-3"
               >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-     <!-- Modal para Formulario de Contacto -->
-    <div
-      class="modal fade"
-      id="contactFormModal"
-      tabindex="-1"
-      aria-labelledby="contactFormModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactFormModalLabel">
-              Solicitar Información
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="../enviar.php" method="POST">
-              <div class="mb-3">
-                <label for="modal-email" class="form-label">Tu Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="modal-email"
-                  name="email"
-                  placeholder="ejemplo@correo.com"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-nombre" class="form-label"
-                  >Tu Nombre (opcional)</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="modal-nombre"
-                  name="nombre"
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-nombre-empresa" class="form-label"
-                  >Nombre de tu empresa (opcional)</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="modal-nombre-empresa"
-                  name="nombre-empresa"
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-mensaje" class="form-label"
-                  >Mensaje (opcional)</label
-                >
-                <textarea
-                  class="form-control"
-                  id="modal-mensaje"
-                  name="mensaje"
-                  rows="4"
-                  placeholder="Contanos brevemente tu consulta..."
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Enviar
-              </button>
-            </form>
+                Nuestras Soluciones
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-<!-- Hero Section con Video -->
-<section class="solution-hero telecom-hero">
-  <!-- Video de fondo -->
-  <video autoplay muted loop playsinline class="hero-video">
-    <source
-      src="https://res.cloudinary.com/df3avxpqr/video/upload/v1757553179/1085656-uhd_3840_2160_25fps_rivdc3.mp4"
-      type="video/mp4"
-    />
-    Tu navegador no soporta video HTML5.
-  </video>
-
-  <!-- Overlay para oscurecer el video -->
-  <div class="video-overlay"></div>
-
-  <!-- Contenido encima del video -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 text-center">
-        <h1 class="hero-title">
-          Soluciones Integrales de Telecomunicaciones
-        </h1>
-        <p class="hero-subtitle">
-          Conectamos personas, empresas y ciudades con tecnología de
-          vanguardia para un futuro más inteligente y conectado
-        </p>
-        <div class="hero-buttons">
-          <a href="../index.html#contact" class="btn btn-primary btn-lg">
-            Contactar Ahora
-          </a>
-          <a
-            href="../index.html#solutions"
-            class="btn btn-outline-light btn-lg ms-3"
-          >
-            Nuestras Soluciones
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Introducción -->
+
     <section class="solution-intro" id="soluciones">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Nuestras Soluciones Tecnológicas</h2>
+
             <p class="lead">
               Ofrecemos un portafolio completo de servicios de
               telecomunicaciones diseñados para satisfacer las necesidades
@@ -208,19 +110,25 @@
     </section>
 
     <!-- Internet Satelital -->
+
     <section class="solution-section bg-light" id="internet">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
+               <center>
               <div class="section-icon">
                 <i class="fas fa-satellite"></i>
               </div>
+             
+
               <h2 class="section-main-title">INTERNET SATELITAL</h2>
+</center>
               <p>
                 Somos Partners de la empresa Argentina más innovadora de
                 internet satelital en Latam.
               </p>
+
               <p>
                 Atendemos los Mercados Residencial, Corporativo y Gobierno con
                 soluciones ajustadas a cada segmento, operando sobre 11 haces de
@@ -228,6 +136,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
@@ -241,33 +150,38 @@
     </section>
 
     <!-- Redes LoRa -->
+
     <section class="solution-section" id="redes">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="solution-content">
-              <div class="section-icon">
-                <i class="fas fa-network-wired"></i>
-              </div>
+              <center>           
               <h2 class="section-main-title">REDES LORA</h2>
+</center>
+ 
               <p>
                 Desarrollamos Redes para Smart City como una solución que
                 permita la gestión centralizada de todos los servicios de la
                 ciudad, logrando:
               </p>
+
               <ul class="solution-features">
                 <li>
                   <i class="fas fa-check-circle"></i> Mejorar la calidad de vida
                   de los ciudadanos
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Mayor eficiencia y
                   sostenibilidad
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Colaborar y facilitar la
                   gestión municipal
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Expandir a cualquier
                   sector de Servicio como hospitales, colegios, transporte, etc.
@@ -275,10 +189,11 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-6 order-lg-1">
             <div class="solution-image">
               <img
-                src="https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                src="../assets/images/IoT/WhatsApp Image 2025-10-15 at 11.33.55.jpeg"
                 alt="Redes LoRa"
               />
             </div>
@@ -288,15 +203,19 @@
     </section>
 
     <!-- Redes Industriales -->
+
     <section class="solution-section bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
+              <center>
               <div class="section-icon">
                 <i class="fas fa-industry"></i>
               </div>
+
               <h2 class="section-main-title">REDES INDUSTRIALES</h2>
+</center>
               <p>
                 De Comunicación Cableada o Inalámbrica para condiciones
                 ambientales agresivas e incluso potencialmente explosivas.
@@ -305,10 +224,11 @@
               </p>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
-                src="../Imagenes/Soluciones/refdes.png"
+                src="../assets/images/Soluciones/refdes.png"
                 alt="Redes Industriales"
               />
             </div>
@@ -318,23 +238,24 @@
     </section>
 
     <!-- Comunicaciones en la Nube -->
+
     <section class="solution-section bg-light" id="comunicaciones">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
-              <div class="section-icon">
-                <i class="fas fa-cloud"></i>
-              </div>
+              <center>
               <h2 class="section-main-title">
                 SOLUCIONES DE COMUNICACIONES EN LA NUBE PARA EMPRESAS
               </h2>
+</center>
               <p class="lead">
                 Descubrí soluciones de comunicaciones confiables, intuitivas y
                 flexibles para optimizar los flujos de trabajo, colaborar sin
                 esfuerzo, ganar productividad y construir relaciones duraderas
                 con los clientes.
               </p>
+
               <p>
                 Te ofrecemos la plataforma de comunicación empresarial más
                 inteligente y robusta de mercado.
@@ -342,6 +263,7 @@
 
               <div class="mt-5">
                 <h3 class="mb-4">Beneficios principales:</h3>
+
                 <div class="row">
                   <div class="col-md-6">
                     <ul class="solution-features">
@@ -349,37 +271,46 @@
                         <i class="fas fa-check-circle"></i> Planes con
                         diferentes esquemas
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Activación rápida y
                         simple
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Teléfono IP incluido
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Reportes detallados
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> +40 funcionalidades
                       </li>
                     </ul>
                   </div>
+
                   <div class="col-md-6">
                     <ul class="solution-features">
                       <li>
                         <i class="fas fa-check-circle"></i> Videoconferencia
                         integrada
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Grabación de
                         llamadas
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Integración con CRM
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Softphone incluido
                       </li>
+
                       <li>
                         <i class="fas fa-check-circle"></i> Numeración local e
                         internacional
@@ -395,6 +326,7 @@
               </a>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image text-center">
               <img
@@ -409,16 +341,18 @@
     </section>
 
     <!-- Cartelería Digital -->
+
     <section class="solution-section" id="carteleria">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="solution-content">
-              <div class="section-icon">
-                <i class="fas fa-desktop"></i>
-              </div>
+              <center>
+
               <h2 class="section-main-title">CARTELERÍA DIGITAL</h2>
+</center>
               <h3>DEX MANAGER</h3>
+
               <p>
                 Solución distribuida basada en la nube (SaaS) u on-premise según
                 la necesidad del cliente. Que permite la gestión, distribución y
@@ -427,10 +361,12 @@
 
               <a href="#" class="btn btn-download mt-4" id="downloadDexManager">
                 <span class="btn-text">DESCARGAR PRESENTACIÓN</span>
+
                 <span class="loading-spinner"></span>
               </a>
 
               <h3 class="mt-5">C-CONTROL</h3>
+
               <p>
                 Solución de software y hardware que convierte en colaborativa
                 cualquier superficie dentro de Salas de Reuniones / NOC.
@@ -443,11 +379,13 @@
                   contenidos que se desean mostrar en forma simple e
                   instantánea.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Grabación de diferentes
                   escenarios, posibilitando el cambio de contenidos de todo un
                   video wall con un click.
                 </li>
+
                 <li>
                   <i class="fas fa-check-circle"></i> Cada recurso conectado a
                   la Red puede compartir y mostrar sus propios archivos en el
@@ -456,6 +394,7 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-6">
             <div class="solution-image">
               <img
@@ -469,16 +408,19 @@
     </section>
 
     <!-- CTA Section -->
+
     <section class="cta-section" id="contacto">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>¿Listo para transformar sus comunicaciones?</h2>
+
             <p class="lead">
               Contáctenos hoy mismo para recibir asesoramiento personalizado y
               descubrir cómo nuestras soluciones pueden potenciar su negocio o
               proyecto.
             </p>
+
             <a href="../index.html#contact" class="btn btn-primary"
               >Solicitar una Demostración</a
             >
@@ -487,128 +429,92 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="footer-brand">
-              <img src="../Imagenes/logo.png" alt="CuencoTech" />
-            </div>
-            <p class="footer-description">
-              Especialistas en soluciones tecnológicas innovadoras para
-              optimizar procesos organizacionales.
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 mb-4">
-            <h4 class="footer-title">Enlaces</h4>
-            <ul class="footer-links">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#about">Nosotros</a></li>
-              <li><a href="../index.html#solutions">Soluciones</a></li>
-              <li><a href="../index.html#partners">Alianzas</a></li>
-              <li><a href="../index.html#markets">Mercados</a></li>
-              <li><a href="../index.html#contact">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-4">
-            <h4 class="footer-title">Soluciones</h4>
-            <ul class="footer-links">
-              <li><a href="/soluciones/IoSmartCity.html">IoT Smart City</a></li>
-              <li>
-                <a href="/soluciones/movilidadYseguridad.html"
-                  >Movilidad y Seguridad</a
-                >
-              </li>
-              <li>
-                <a href="/soluciones/comunicacionesYconectividad.html"
-                  >Comunicaciones</a
-                >
-              </li>
-              <li>
-                <a href="/soluciones/ciberseguridad.html">Ciberseguridad</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-4">
-            <h4 class="footer-title">Contacto</h4>
-            <ul class="footer-links">
-              <li>
-                <i class="fas fa-map-marker-alt me-2"></i> R Cubillos 2056
-              </li>
-              <li><i class="fas fa-phone me-2"></i> +54 2615 33 3015</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> contacto@cuencotech.com
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center copyright">
-            <p>&copy; 2023 Cuenco Tech. Todos los derechos reservados.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div data-component="footer"></div>
 
     <!-- jQuery primero -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Bootstrap después (si lo usás) -->
+    <!-- Bootstrap despues (si lo usas) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Y al final tu script -->
-    <script src="../script.js"></script>
+
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      // Funcion para descargar PDF
+
+      function downloadFile(fileUrl, fileName) {
+        // Crear un enlace temporal
+
+        const link = document.createElement("a");
+
+        link.href = fileUrl;
+
+        // Nombre del archivo que se descargara
+
+        link.download = fileName;
+
+        // Simular clic en el enlace
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+      }
+
+      // Asignar eventos a los botones de descarga
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Boton de descarga NET2PHONE
+
+        const downloadNet2PhoneBtn =
+          document.getElementById("downloadNet2Phone");
+
+        if (downloadNet2PhoneBtn) {
+          downloadNet2PhoneBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Reemplazar con la ruta correcta del archivo
+
+            downloadFile(
+              "../assets/pdf/Presentacion Net2phone.pdf",
+
+              "Presentacion-Net2Phone.pdf",
+            );
+          });
+        }
+
+        // Boton de descarga DEX MANAGER
+
+        const downloadDexManagerBtn = document.getElementById(
+          "downloadDexManager",
+        );
+
+        if (downloadDexManagerBtn) {
+          downloadDexManagerBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Reemplazar con la ruta correcta del archivo
+
+            downloadFile(
+              "../assets/pdf/Dex Manager Presentacion.pdf",
+
+              "Presentacion-Dex-Manager.pdf",
+            );
+          });
+        }
+      });
+    </script>
   </body>
 </html>
 
-<script>
-  // Función para descargar PDF
-  function downloadFile(fileUrl, fileName) {
-    // Crear un enlace temporal
-    const link = document.createElement("a");
-    link.href = fileUrl;
 
-    // Nombre del archivo que se descargará
-    link.download = fileName;
 
-    // Simular clic en el enlace
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
 
-  // Asignar eventos a los botones de descarga
-  document.addEventListener("DOMContentLoaded", function () {
-    // Botón de descarga NET2PHONE
-    const downloadNet2PhoneBtn = document.getElementById("downloadNet2Phone");
-    if (downloadNet2PhoneBtn) {
-      downloadNet2PhoneBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Reemplazar con la ruta correcta del archivo
-        downloadFile(
-          "../Pdf/Presentacion Net2phone.pdf",
-          "Presentacion-Net2Phone.pdf",
-        );
-      });
-    }
 
-    // Botón de descarga DEX MANAGER
-    const downloadDexManagerBtn = document.getElementById("downloadDexManager");
-    if (downloadDexManagerBtn) {
-      downloadDexManagerBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Reemplazar con la ruta correcta del archivo
-        downloadFile(
-          "../Pdf/Dex Manager Presentacion.pdf",
-          "Presentacion-Dex-Manager.pdf",
-        );
-      });
-    }
-  });
-</script>
+
+
+

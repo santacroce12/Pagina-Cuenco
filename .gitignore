@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.out/
+.next/
+out/
+*.log
+.vscode/
+.idea/
+.env
+.env.local
+.env.*.local
+coverage/
+.cache/
+.tmp/

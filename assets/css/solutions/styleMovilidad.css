@@ -1,4 +1,6 @@
-/* Variables globales */
+/* styleMovilidad.css - Estilos para página de Movilidad y Seguridad Urbana */
+
+/* Variables globales - Manteniendo tu paleta de colores */
 :root {
   --primary-color: #2c6fd6;
   --secondary-color: #1ebba3;
@@ -91,19 +93,27 @@ h6 {
     transform: translateY(0);
   }
 }
-
 .animate {
   animation: fadeIn 1s ease forwards;
 }
-
-/* Hero Section */
+/* Hero Section mejorada 
+.solution-hero {
+    background: linear-gradient(rgba(26, 26, 64, 0.85), rgba(26, 26, 64, 0.9)), 
+            url('../../images/Movility\ y\ seguridad.jpg') no-repeat center center/cover !important;
+    padding: 150px 0 100px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+*/
 .solution-hero {
   position: relative;
-  min-height: 500px; /* o lo que prefieras */
   padding: 150px 0 100px;
-
+  color: white;
+  text-align: center;
+  overflow: hidden;
 }
-
 
 .hero-video {
   position: absolute;
@@ -111,7 +121,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* se comporta como background-size: cover */
+  object-fit: cover; /* Para cubrir toda la sección */
   z-index: -2;
 }
 
@@ -121,7 +131,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(26, 26, 64, 0.7); /* capa oscura encima del video */
+  background: rgba(26, 26, 64, 0.7); /* Overlay oscuro */
   z-index: -1;
 }
 
@@ -149,8 +159,7 @@ h6 {
   animation: fadeIn 1s ease 0.6s both;
 }
 
-
-/* Botones */
+/* Botones mejorados */
 .btn-primary {
   background: var(--gradient);
   border: none;
@@ -226,7 +235,7 @@ h6 {
   box-shadow: 0 8px 20px rgba(44, 111, 214, 0.5);
 }
 
-/* Secciones de solución */
+/* Secciones de solución mejoradas */
 .solution-intro {
   padding: 100px 0;
   background: white;
@@ -303,6 +312,32 @@ h6 {
   background: var(--secondary-color);
 }
 
+.solution-subsection-title {
+  font-size: 1.8rem;
+  margin: 30px 0 20px;
+  color: var(--dark-color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.solution-section.bg-dark-custom .solution-subsection-title {
+  color: white !important;
+}
+
+.solution-subsection-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--gradient);
+}
+
+.solution-section.bg-dark-custom .solution-subsection-title::after {
+  background: var(--secondary-color);
+}
+
 .solution-content h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
@@ -325,6 +360,21 @@ h6 {
   width: 50px;
   height: 3px;
   background: var(--gradient);
+}
+
+.solution-section.bg-dark-custom .solution-content h3::after {
+  background: var(--secondary-color);
+}
+
+.solution-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.solution-section.bg-dark-custom .solution-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .solution-features {
@@ -386,11 +436,10 @@ h6 {
   transform: scale(1.03);
 }
 
-/* Tarjetas */
+/* Tarjetas de productos */
 .card {
   transition: var(--transition);
   border: none !important;
-  height: 100%;
 }
 
 .card:hover {
@@ -412,7 +461,7 @@ h6 {
   color: #666;
 }
 
-/* CTA Section */
+/* CTA Section mejorada */
 .cta-section {
   padding: 100px 0;
   background: linear-gradient(135deg, #2a2a5a 0%, #1a1a40 100%);
@@ -420,6 +469,17 @@ h6 {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,224C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat bottom center/cover;
 }
 
 .cta-section h2 {
@@ -440,23 +500,38 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Footer */
-footer {
-  background: #151528;
-  color: white;
-  padding: 80px 0 30px;
-  width: 100%;
-  position: relative;
+.cta-section .btn-primary {
+  background: var(--secondary-color);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(30, 187, 163, 0.4);
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.cta-section .btn-primary:hover {
+  background: #1aa892;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30, 187, 163, 0.5);
+}
+
+/* Footer mejorado */
+footer {
+  background-color: #1a1a30;
+  color: white;
+  padding: 60px 0 30px;
   width: 100%;
-  height: 5px;
-  background: var(--gradient);
+}
+
+.footer-brand img {
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -465,17 +540,16 @@ footer::before {
   position: relative;
   font-size: 1.2rem;
   color: white;
-  padding-bottom: 10px;
 }
 
 .footer-title::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 40px;
   height: 3px;
-  background: var(--secondary-color);
+  background: var(--gradient);
 }
 
 .footer-links {
@@ -485,21 +559,39 @@ footer::before {
 
 .footer-links li {
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
 }
 
 .footer-links a {
   color: #ccc;
   text-decoration: none;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: var(--secondary-color);
+  color: white;
   padding-left: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--gradient);
+  transform: translateY(-3px);
 }
 
 .copyright {
@@ -507,8 +599,6 @@ footer::before {
   padding-top: 20px;
   margin-top: 30px;
   color: #999;
-  text-align: center;
-  font-size: 0.9rem;
 }
 
 /* Animaciones */
@@ -635,132 +725,6 @@ footer::before {
     padding: 1.5rem;
   }
 }
-
-/* Iconos grandes para secciones */
-.section-icon {
-  font-size: 3.5rem;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.bg-dark-custom .section-icon {
-  color: var(--secondary-color);
-}
-
-/* Mejoras para botones de descarga */
-.btn-download {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-download .btn-text {
-  transition: opacity 0.3s ease;
-}
-
-.btn-download .loading-spinner {
-  display: none;
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top-color: white;
-  animation: spin 1s ease-in-out infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -10px;
-  margin-left: -10px;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.btn-download.downloading {
-  pointer-events: none;
-}
-
-.btn-download.downloading .btn-text {
-  opacity: 0;
-}
-
-.btn-download.downloading .loading-spinner {
-  display: block;
-}
-
-.btn-download.success {
-  background-color: #28a745;
-}
-
-.btn-download.success:hover {
-  background-color: #218838;
-}
-
-/* Estilos específicos para la página de Ciberseguridad */
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.service-card {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: var(--transition);
-  height: 100%;
-  border-left: 4px solid var(--primary-color);
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  border-left: 4px solid var(--secondary-color);
-}
-
-.service-card i {
-  font-size: 36px;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: var(--dark-color);
-}
-
-.service-card p {
-  color: #666;
-}
-
-.approach-item {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.approach-icon {
-  flex: 0 0 60px;
-  font-size: 24px;
-  color: var(--primary-color);
-  margin-right: 20px;
-}
-
-.approach-content h4 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: var(--dark-color);
-}
-
-.approach-content p {
-  color: #666;
-}
-
 
 /* Contact Form Styles */
 .contact-form-card {

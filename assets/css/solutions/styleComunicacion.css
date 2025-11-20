@@ -100,9 +100,7 @@ h6 {
   position: relative;
   min-height: 500px; /* o lo que prefieras */
   padding: 150px 0 100px;
-
 }
-
 
 .hero-video {
   position: absolute;
@@ -133,7 +131,6 @@ h6 {
   color: white !important;
 }
 
-
 .solution-hero {
   position: relative;
   padding: 150px 0 100px;
@@ -141,7 +138,6 @@ h6 {
   text-align: center;
   overflow: hidden;
 }
-
 
 .hero-subtitle {
   font-size: 1.5rem;
@@ -326,13 +322,7 @@ h6 {
 }
 
 .solution-content h3::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background: var(--gradient);
+  content: none;
 }
 
 .solution-features {
@@ -450,21 +440,19 @@ h6 {
 
 /* Footer */
 footer {
-  background: #151528;
+  background-color: #1a1a30;
   color: white;
-  padding: 80px 0 30px;
+  padding: 60px 0 30px;
   width: 100%;
-  position: relative;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: var(--gradient);
+.footer-brand img {
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -473,17 +461,16 @@ footer::before {
   position: relative;
   font-size: 1.2rem;
   color: white;
-  padding-bottom: 10px;
 }
 
 .footer-title::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 40px;
   height: 3px;
-  background: var(--secondary-color);
+  background: var(--gradient);
 }
 
 .footer-links {
@@ -493,21 +480,39 @@ footer::before {
 
 .footer-links li {
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
 }
 
 .footer-links a {
   color: #ccc;
   text-decoration: none;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: var(--secondary-color);
+  color: white;
   padding-left: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--gradient);
+  transform: translateY(-3px);
 }
 
 .copyright {
@@ -515,8 +520,6 @@ footer::before {
   padding-top: 20px;
   margin-top: 30px;
   color: #999;
-  text-align: center;
-  font-size: 0.9rem;
 }
 
 /* Animaciones */
@@ -718,7 +721,7 @@ footer::before {
 .contact-form-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-} 
+}
 
 /* Títulos */
 .contact-form-card h3 {

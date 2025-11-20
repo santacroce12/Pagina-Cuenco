@@ -27,6 +27,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   color: #444;
+  font-size: 1.1rem;
   overflow-x: hidden;
   padding-top: 76px;
   width: 100%;
@@ -49,7 +50,7 @@ h6 {
   padding: 11px 0;
   transition: all 0.3s ease;
   background-color: rgba(26, 26, 64, 0.95) !important;
-   backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -150,6 +151,10 @@ h6 {
 .hero-content {
   position: relative;
   z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -165,10 +170,90 @@ h6 {
   margin-bottom: 30px;
   font-weight: 300;
   color: white;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.hero-buttons .ms-3 {
+  margin-left: 0 !important;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage-hero {
+  padding: 150px 0 90px;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 55%),
+    var(--gradient);
+  color: #fff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.subpage-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(16, 34, 65, 0.4));
+  z-index: 0;
+}
+
+.subpage-hero .container,
+.subpage-hero .row,
+.subpage-hero .col-lg-10 {
+  position: relative;
+  z-index: 1;
+}
+
+.subpage-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subpage-hero .hero-subtitle {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.subpage-hero .btn {
+  margin-top: 20px;
+}
+
+.faq-hero {
+  background: linear-gradient(135deg, #1a1a40, #2c6fd6);
+  padding: 110px 0 70px;
+}
+
+@media (max-width: 768px) {
+  .faq-hero {
+    padding: 80px 0 50px;
+  }
 }
 
 .btn-primary {
@@ -802,6 +887,7 @@ h6 {
   height: 100%;
   backdrop-filter: blur(10px);
   transition: all 0.4s ease;
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   position: relative;
@@ -854,8 +940,28 @@ h6 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+.contact-header-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
-.contact-card:hover .flag-circle {
+.contact-header-link .flag-circle {
+  margin-bottom: 0;
+}
+
+.contact-header-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 6px;
+}
+
+.contact-card:hover .flag-circle,
+.contact-header-link:hover .flag-circle,
+.contact-header-link:focus .flag-circle {
   transform: scale(1.05);
   border-color: rgba(255, 255, 255, 0.25);
 }
@@ -898,6 +1004,49 @@ h6 {
 
 .contact-item span {
   flex: 1;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  box-shadow: 0 12px 25px rgba(18, 140, 126, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+  text-decoration: none;
+  margin: 28px auto 0;
+  width: fit-content;
+}
+
+.btn-whatsapp i {
+  font-size: 1.2rem;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 30px rgba(18, 140, 126, 0.35);
+  opacity: 0.92;
+}
+
+.btn-whatsapp:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 4px;
 }
 
 /* Responsive adjustments */
@@ -1071,12 +1220,12 @@ footer {
 }
 /* Contact Form Styles */
 .contact-form-card {
-  background: rgba(16, 16, 53, 0.95); /* 🔹 Fondo morado translúcido */
+  background: rgba(16, 16, 53, 0.95); /* Fondo morado translúcido */
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 40px 30px;
   transition: all 0.3s ease;
-  color: white; /* 🔹 Asegura que el texto se vea sobre el fondo oscuro */
+  color: white; /* Texto legible sobre fondo oscuro */
 }
 
 .contact-form-card:hover {
@@ -1090,13 +1239,13 @@ footer {
   margin-bottom: 25px;
   font-weight: 700;
   text-align: center;
-  color: white; /* 🔹 Cambiado a blanco */
+  color: white;
 }
 
 /* Labels */
 .contact-form-card label {
   font-weight: 600;
-  color: #ddd; /* 🔹 Mejor contraste sobre fondo oscuro */
+  color: #ddd; /* Mejor contraste sobre fondo oscuro */
   margin-bottom: 8px;
   display: inline-block;
 }
@@ -1110,13 +1259,13 @@ footer {
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.1); /* 🔹 Semi-transparente */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
   color: white;
 }
 
 .contact-form-card input::placeholder,
 .contact-form-card textarea::placeholder {
-  color: #bbb; /* 🔹 Placeholder visible */
+  color: #bbb; /* Placeholder visible */
 }
 
 .contact-form-card input:focus,
@@ -1151,13 +1300,14 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
+
 /* Fondo de la sección del formulario */
 .contact-form-section {
   background: linear-gradient(
     135deg,
     #1a1a40 0%,
     #2a2a5a 100%
-  ); /* Igual que .contact */
+  );
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -1173,12 +1323,12 @@ footer {
   height: 100%;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(44,111,214,0.03)"/></svg>');
   background-size: cover;
-  pointer-events: none; /* 🔹 Esto evita que bloquee el formulario */
+  pointer-events: none; /* Evita que bloquee el formulario */
 }
 
 /* Estilos para el modal de formulario */
 #contactFormModal .modal-content {
-  background: rgba(16, 16, 53, 0.95);
+  background: rgba(16, 16, 53, 0.95); /* Fondo morado translúcido */
   border-radius: 15px;
   border: none;
   color: white;
@@ -1210,7 +1360,7 @@ footer {
 }
 
 #contactFormModal .form-control {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   color: white;
@@ -1218,12 +1368,10 @@ footer {
 }
 
 #contactFormModal .form-control:focus {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #2c6fd6;
+  border-color: var(--primary-color);
+  outline: none;
   box-shadow: 0 0 0 3px rgba(44, 111, 214, 0.25);
-  color: white;
 }
-
 #contactFormModal .form-control::placeholder {
   color: #bbb;
 }
@@ -1257,7 +1405,7 @@ footer {
   display: flex;
   gap: 30px;
   width: max-content; /* se adapta al contenido */
-  animation: scroll-partners 15s linear infinite; /* ⚡ más rápido */
+  animation: scroll-partners 15s linear infinite; /* Animación continua más rápida */
 }
 
 .partner-item {
@@ -1313,7 +1461,7 @@ footer {
   z-index: 10;
 }
 
-/* 🎬 Animación continua sin cortes */
+/* Animación continua sin cortes */
 @keyframes scroll-partners {
   from {
     transform: translateX(0);
@@ -1387,4 +1535,75 @@ footer {
   max-width: 100px !important;
   max-height: 50px !important;
   object-fit: contain;
+}
+
+.faq {
+  padding: 90px 0;
+  background: #f8f9fc;
+}
+
+.faq .section-title::after {
+  background: var(--gradient);
+}
+
+.faq .section-subtitle {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  color: #5c5c6f;
+  font-size: 1.05rem;
+}
+
+.faq .accordion-item {
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(17, 23, 41, 0.08);
+  background: #fff;
+}
+
+.faq .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .accordion-button {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--dark-color);
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: var(--gradient);
+  box-shadow: none;
+}
+
+.faq .accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.faq .accordion-body {
+  padding: 1.25rem 1.5rem 1.75rem;
+  line-height: 1.7;
+  color: #4c4c66;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 70px 0;
+  }
+
+  .faq .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .faq .accordion-button {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
