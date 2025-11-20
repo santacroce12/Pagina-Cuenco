@@ -6,15 +6,6 @@
     "."
   ).replace(/\/$/, "");
 
-  const solutionUrls = {
-    iot: `${rootPath}/soluciones/IoSmartCity.html`,
-    movilidad: `${rootPath}/soluciones/movilidadYseguridad.html`,
-    comunicaciones: `${rootPath}/soluciones/comunicacionesYconectividad.html`,
-    ciberseguridad: `${rootPath}/soluciones/ciberseguridad.html`,
-  };
-
-  const getSolutionHref = (key) => (key && solutionUrls[key]) || null;
-
   /* ================= NAVBAR ================= */
   const updateNavbarState = () => {
     $(".navbar").toggleClass("navbar-scrolled", $(window).scrollTop() > 50);
@@ -49,7 +40,7 @@
   /* ================= ANIMACIONES ON SCROLL ================= */
   const initScrollAnimations = () => {
     const animatedSelectors =
-      ".about-card, .solution-card, .market-item, .partner-item";
+      ".about-card, .success-insight-card, .project-main-figure, .project-video-intro, .project-carousel, .market-item, .partner-item";
 
     if ("IntersectionObserver" in window) {
       const observer = new IntersectionObserver(
@@ -89,23 +80,6 @@
   };
 
   initScrollAnimations();
-
-  /* ================= REDIRECCIONES SOLUCIONES ================= */
-  $(document).on(
-    "click",
-    ".solution-card, .solution-link, .explore-btn",
-    function (event) {
-      const solutionKey =
-        $(this).data("solution") ||
-        $(this).closest(".solution-card").data("solution");
-      const targetHref = getSolutionHref(solutionKey);
-
-      if (!targetHref) return;
-
-      event.preventDefault();
-      window.location.href = targetHref;
-    },
-  );
 
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Selecciona todas las tarjetas que marcamos como clickeables
