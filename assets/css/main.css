@@ -479,6 +479,23 @@ h6 {
   gap: 16px;
 }
 
+.success-highlight-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 25px 60px rgba(17, 23, 41, 0.12);
+  margin: 24px 0;
+}
+
+.success-highlight-card p {
+  margin: 0;
+  color: #4b4b62;
+}
+
+.success-highlight-card .btn {
+  margin-top: 16px;
+}
+
 .success-actions .btn {
   position: relative;
   overflow: hidden;
@@ -547,10 +564,30 @@ h6 {
   overflow: hidden;
 }
 
-.project-main-figure img {
-  border-radius: 24px;
+.media-frame,
+.video-frame,
+.project-carousel-media {
+  position: relative;
   width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #050814;
+}
+
+.project-carousel-media {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 28px;
+}
+
+.media-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .project-media-badge {
@@ -574,8 +611,8 @@ h6 {
   color: #d9dcf2;
 }
 
-.project-video-intro .video-frame video {
-  border-radius: 18px;
+.project-video-intro .video-frame {
+  border-radius: 20px;
   background: #000;
 }
 
@@ -590,17 +627,11 @@ h6 {
 }
 
 .project-carousel {
-  border-radius: 32px;
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 35px 80px rgba(17, 23, 41, 0.15);
+  box-shadow: none;
   position: relative;
-}
-
-.project-carousel .carousel-item img,
-.project-carousel .carousel-item video {
-  object-fit: cover;
-  width: 100%;
-  height: 520px;
+  padding: 0;
 }
 
 .project-carousel .carousel-caption {
@@ -637,6 +668,28 @@ h6 {
   text-align: center;
 }
 
+.project-carousel-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0f172a, #1f2a44);
+  padding: 28px;
+  border-radius: 40px;
+  box-shadow: 0 30px 70px rgba(7, 11, 24, 0.35);
+}
+
+.project-carousel .carousel-indicators {
+  margin-bottom: 10px;
+}
+
+.project-carousel .carousel-item {
+  padding: 0 6px;
+}
+
+.project-carousel .carousel-control-prev-icon,
+.project-carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
 @media (max-width: 992px) {
   .success-case {
     padding: 70px 0;
@@ -654,9 +707,14 @@ h6 {
     margin-top: 20px;
   }
 
-  .project-carousel .carousel-item img,
-  .project-carousel .carousel-item video {
-    height: 360px;
+  .media-frame,
+  .video-frame,
+  .project-carousel-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-carousel-media .media-cover {
+    border-radius: 18px;
   }
 }
 

@@ -185,6 +185,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener("components:loaded", initContactWhatsappLinks);
 
+  /* ================= CAROUSEL VIDEO CONTROL ================= */
+  const initProjectCarouselMedia = (() => {
+    let initialized = false;
+    return () => {
+      if (initialized) return;
+      const carouselEl = document.getElementById("prototipoCarousel");
+      if (!carouselEl) return;
+      initialized = true;
+
+      if (window.bootstrap?.Carousel) {
+        window.bootstrap.Carousel.getOrCreateInstance(carouselEl);
+      }
+
+      const videos = Array.from(carouselEl.querySelectorAll("video"));
+      if (!videos.length) return;
+
+      const resetVideos = () => {
+        videos.forEach((video) => {
+          video.pause();
+          try {
+            video.currentTime = 0;
+          } catch (error) {
+            /* ignore */
+          }
+        });
+      };
+
+      const playActiveVideo = () => {
+        const activeVideo = carouselEl.querySelector(".carousel-item.active video");
+        if (!activeVideo) return;
+        const playPromise = activeVideo.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {});
+        }
+      };
+
+      resetVideos();
+      playActiveVideo();
+
+      carouselEl.addEventListener("slide.bs.carousel", () => {
+        resetVideos();
+      });
+
+      carouselEl.addEventListener("slid.bs.carousel", () => {
+        playActiveVideo();
+      });
+    };
+  })();
+
+  document.addEventListener("DOMContentLoaded", initProjectCarouselMedia);
+  document.addEventListener("components:loaded", initProjectCarouselMedia);
+
   /* ================= PAUSAR CARRUSEL EN HOVER ================= */
   $(document).on("mouseenter", ".partners-carousel", function () {
     $(this).addClass("paused");
