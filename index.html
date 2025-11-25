@@ -239,7 +239,7 @@
 
               <a
                 class="success-case-link"
-                href="case-recursos.html#lujan-hipervisualizador"
+                href="recursos.html#case-lujan-hipervisualizador"
               >
                 Ver caso completo
                 <i class="fas fa-arrow-up-right-from-square ms-2"></i>
@@ -267,7 +267,7 @@
 
               <a
                 class="btn btn-primary btn-lg"
-                href="case-recursos.html#lujan-hipervisualizador"
+                href="recursos.html#case-lujan-hipervisualizador"
               >
                 Ir al caso
               </a>
@@ -326,6 +326,17 @@
               Publicaremos renders, pruebas de campo y datos de uso a medida que
               el prototipo evolucione.
             </p>
+
+            <div class="project-extra-actions mt-3">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#bicisInfoModal"
+              >
+                Ver m&#225;s informaci&#243;n del proyecto
+              </button>
+            </div>
           </div>
 
           <div class="col-lg-7">
@@ -545,6 +556,171 @@
           </div>
         </div>
     </section>
+
+    <!-- Modal Información Bicis -->
+    <div
+      class="modal fade project-modal"
+      id="bicisInfoModal"
+      tabindex="-1"
+      aria-labelledby="bicisInfoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="section-kicker mb-1">Parking inteligente</p>
+              <h3 class="modal-title" id="bicisInfoModalLabel">
+                Laboratorio de bicicletas inteligentes
+              </h3>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-hero mb-4">
+              <div class="modal-hero-copy">
+                <p class="mb-2 text-muted">
+                  Arquitectura integral para dejar la bici con infladores,
+                  herramientas guiadas y circuito de seguridad IoT.
+                </p>
+
+                <div class="modal-badges">
+                  <span class="badge bg-primary-soft">
+                    <i class="fas fa-qrcode me-1"></i>Acceso por QR
+                  </span>
+                  <span class="badge bg-primary-soft">
+                    <i class="fas fa-shield-alt me-1"></i>Videovigilancia
+                  </span>
+                  <span class="badge bg-primary-soft">
+                    <i class="fas fa-tools me-1"></i>Kit de servicio
+                  </span>
+                </div>
+              </div>
+
+              <div class="modal-hero-media">
+                <div class="media-frame">
+                  <img
+                    src="assets/images/Bicis/1.jpg"
+                    alt="Vista principal del parking inteligente"
+                    class="media-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-icon-grid mb-4">
+              <div class="icon-card">
+                <div class="icon-pill">
+                  <i class="fas fa-qrcode"></i>
+                </div>
+                <div>
+                  <h6>Ingreso seguro</h6>
+                  <p class="mb-0">
+                    Escaneo de QR y control de identidad para habilitar bah&#237;as.
+                  </p>
+                </div>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon-pill">
+                  <i class="fas fa-video"></i>
+                </div>
+                <div>
+                  <h6>Monitoreo 24/7</h6>
+                  <p class="mb-0">
+                    C&#225;maras anal&#237;ticas con alertas autom&#225;ticas ante eventos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon-pill">
+                  <i class="fas fa-wrench"></i>
+                </div>
+                <div>
+                  <h6>Herramientas guiadas</h6>
+                  <p class="mb-0">
+                    Kits de mantenimiento con se&#241;al&#233;tica y tutoriales en sitio.
+                  </p>
+                </div>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon-pill">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div>
+                  <h6>Lockers inteligentes</h6>
+                  <p class="mb-0">
+                    Guardado asistido con sensores de apertura y trazabilidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-expand-card mb-4">
+              <div class="expand-media">
+                <img
+                  src="assets/images/Bicis/5.jpg"
+                  alt="Habit&#225;culo de bicicletas protegido"
+                  class="media-cover"
+                />
+              </div>
+
+              <div class="expand-overlay">
+                <h5>Habit&#225;culo protegido</h5>
+                <p>
+                  M&#243;dulo con paneles reforzados, cerraduras electr&#243;nicas y
+                  sensores de intrusi&#243;n. La vista se despliega al pasar el cursor.
+                </p>
+              </div>
+            </div>
+
+            <div class="modal-tiles">
+              <div class="tile">
+                <img
+                  src="assets/images/Bicis/4.jpg"
+                  alt="Bah&#237;as asistidas"
+                  class="media-cover"
+                />
+                <div class="tile-info">
+                  Bah&#237;as asistidas con infladores electr&#243;nicos calibrados.
+                </div>
+              </div>
+
+              <div class="tile">
+                <img
+                  src="assets/images/Bicis/6.jpg"
+                  alt="Guiado nocturno"
+                  class="media-cover"
+                />
+                <div class="tile-info">
+                  Guiado lum&#237;nico para uso nocturno y rutas seguras.
+                </div>
+              </div>
+
+              <div class="tile">
+                <img
+                  src="assets/images/Bicis/7.jpg"
+                  alt="Estructura modular"
+                  class="media-cover"
+                />
+                <div class="tile-info">
+                  Estructura modular lista para escalar a nuevos nodos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Markets Section Improved -->
 
